@@ -1,0 +1,88 @@
+/*------------------------------------
+    Variables
+------------------------------------*/
+
+:root {
+    --gray: #eee;
+    --white: #fff;
+    --black: #000;
+    --base: #f6f6f6;
+    --base-0: #fff;
+    --base-1: #151812;
+    --base-2: "";
+    --base-3: "";
+    --primary: #f6931c;
+    --primary: #239df0;
+    --primary: #941cb9;
+    --primary-1: #1e87ce;
+    --primary-3: #0e0b2b;
+    --secondary: #68a51c;
+    --secondary-1: #0d9223;
+    --text-color: #717f94;
+    --color-1: #70b6fe;
+    --color-2: #c670fe;
+    --color-3: #fec070;
+    --color-4: #dc3545;
+    --color-5: #28a745;
+    --color-6: darkblue;
+    --default: rgb(252, 255, 235);
+}
+
+// Colors
+$gray: var(--gray);
+$white: var(--white);
+$black: var(--black);
+$base: var(--base);
+$base-0: var(--base-0);
+$base-1: var(--base-1);
+$base-2: var(--base-2);
+$base-3: var(--base-3);
+$default: var(--default);
+$primary: var(--primary);
+$primary-1: var(--primary-1);
+$primary-3: var(--primary-3);
+$secondary: var(--secondary);
+$secondary-1: var(--secondary-1);
+$text-color: var(--text-color);
+$color-1: var(--color-1);
+$color-2: var(--color-2);
+$color-3: var(--color-3);
+$color-4: var(--color-4);
+$color-5: var(--color-5);
+$color-6: var(--color-6);
+$success: green;
+$warning: orange;
+$danger: #F56C6C;
+
+// Font Family
+$font-family-1: "Poppins", sans-serif;
+$font-family-2: "Poppins", sans-serif;
+
+// Grid
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1230px;
+$space: 100px;
+
+// Heading
+$h1: 60px;
+$h2: 54px;
+$h3: 24px;
+$h4: 20px;
+$h5: 18px;
+$h6: 16px;
+$heading-font: $font-family-1;
+$heading-color: $base-1;
+
+// Container Width
+$container-xs: 480px;
+$container-sm: 750px;
+$container-md: 970px;
+$container-lg: 1200px;
+$container-xl: 1800px;
+
+
+$default-br: 12px;
+$default-bs: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
+$default-bs-hover: 0 3px 1px 0 $primary;

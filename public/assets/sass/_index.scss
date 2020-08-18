@@ -1,0 +1,127 @@
+/*------------------------------------
+
+    Theme Name  : Caffe-Ejare
+    Theme URI   : http://caffeejare.com/
+    Description : Caffe Ejare 
+    Author Name : @kourosh-neyestani
+    Author URI  : http://afracode.com
+    Version     : 1.0
+
+------------------------------------*/
+/*------------------------------------
+    
+    STYLESHEET INDEXING
+    |
+    |
+    |___ Default Styles
+    |	|
+    |   |___ variables
+    |   |___ mixins
+    |   |___ reset
+    |   |___ rtl
+    |   |___ typography
+    |   |___ extend
+    |   |___ animations
+    |   |___ spacing
+    |   |___ helpers
+    |
+    |
+    |___ Structure Styles
+    |	|
+    |   |___ Header
+    |   |___ Footer
+    |   |___ Wrapper
+    |   |___ Sidenav
+    |   |___ Container
+    |
+    |
+    |___ Elements Styles
+    |	|
+    |   |___ Common Elements
+    |
+    |
+    |___ Sections Styles
+    |	|
+    |   |___ Hero
+    |   |___ About
+    |   |___ Posts
+    |   |___ Users
+    |   |___ Quotes
+    |   |___ Search
+    |   |___ Contact
+    |   |___ Features
+    |   |___ Services
+    |   |___ Comments
+    |   |___ Portfolio
+    |   |___ Testimonials
+    |   |___ Call To Action
+    |   |___ Pricing Tables
+    |   |___ Common Sections
+    |
+ 	|
+    |___ Other Styles
+    |   |
+    |   |___ Demo Options
+    |   |___ Theme Preview
+    |
+    |
+    END STYLESHEET INDEXING
+
+------------------------------------*/
+/*------------------------------------
+    Default Styles
+------------------------------------*/
+
+@import "default/variables";
+@import "default/mixins";
+@import "default/reset";
+@import "default/rtl";
+@import "default/typography";
+@import "default/animations";
+@import "default/spacing";
+@import "default/helpers";
+
+/*------------------------------------
+    Structure Styles
+------------------------------------*/
+
+@import "structure/header";
+@import "structure/footer";
+@import "structure/wrapper";
+@import "structure/sidenav";
+@import "structure/container";
+
+/*------------------------------------
+    Elements Styles
+------------------------------------*/
+
+@import "elements/form";
+@import "elements/button";
+@import "elements/common";
+
+/*------------------------------------
+    Sections Styles
+------------------------------------*/
+
+@import "sections/hero";
+@import "sections/about";
+@import "sections/posts";
+@import "sections/users";
+@import "sections/quotes";
+@import "sections/common";
+@import "sections/search";
+@import "sections/contact";
+@import "sections/features";
+@import "sections/services";
+@import "sections/comments";
+@import "sections/portfolio";
+@import "sections/testimonials";
+@import "sections/call-to-action";
+@import "sections/pricing-tables";
+
+/*------------------------------------
+    Other Styles
+------------------------------------*/
+
+@import "other/demo-options";
+@import "other/theme-preview";

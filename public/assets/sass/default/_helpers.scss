@@ -1,0 +1,393 @@
+/*------------------------------------
+    Helpers
+------------------------------------*/
+
+// Text Helpers
+.text-left {
+    text-align: left !important;
+}
+.text-right {
+    text-align: right !important;
+}
+.text-center {
+    text-align: center !important;
+}
+.lowercase {
+    text-transform: lowercase;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+.text-italic {
+    font-style: italic;
+}
+.text-normal {
+    font-style: normal;
+}
+.text-underline {
+    font-style: underline;
+}
+
+/*
+* Text Colors
+*/
+.text-dark {
+    color: $black;
+}
+.text-dark-1 {
+    color: #333333;
+}
+.text-dark-2 {
+    color: #666666;
+}
+.text-dark-3 {
+    color: #999999;
+}
+.text-light {
+    color: $white;
+}
+.text-light-1 {
+    color: #eeeeee;
+}
+.text-light-2 {
+    color: #cccccc;
+}
+.text-light-3 {
+    color: #aaaaaa;
+}
+.text-base-0 {
+    color: $base-0;
+}
+.text-base-1 {
+    color: $base-1;
+}
+.text-base-1 {
+    color: $base-2;
+}
+.text-danger {
+    color: $danger;
+}
+.text-success {
+    color: $success;
+}
+.text-warning {
+    color: $warning;
+}
+.text-primary {
+    color: $primary;
+}
+.text-secondary {
+    color: $secondary;
+}
+.text-gradient {
+    background-image: linear-gradient(to left, $primary, $secondary);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+// Other
+
+.hidden {
+    display: none;
+}
+.invisible {
+    visibility: hidden;
+}
+.div-center {
+    float: none !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.inline-block {
+    float: none;
+    display: inline-block;
+}
+.clearfix {
+    @include clearfix();
+}
+
+// Display Helpers
+.display-wrap {
+    position: relative;
+}
+.display-block {
+    display: block;
+}
+.display-center {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.display-table {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+.display-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+.display-spacing {
+    padding-top: $space;
+    padding-bottom: $space;
+}
+.display-spacing-plus {
+    padding-top: $space + 30px;
+    padding-bottom: 30px;
+}
+.display-spacing-double {
+    padding-top: $space + $space;
+    padding-bottom: $space;
+}
+.display-screen {
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.display-fit-screen {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    overflow: hidden;
+}
+.display-full-screen {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    position: relative;
+}
+
+// Max Width
+.max-w-576 {
+    max-width: 576px;
+}
+.max-w-768 {
+    max-width: 768px;
+}
+.max-w-992 {
+    max-width: 992px;
+}
+
+// Font Weight
+@each $i in (1, 2, 3, 4, 5, 6, 7, 8, 9) {
+    $j: $i * 100;
+    .fw-#{$j} {
+        font-weight: $j;
+    }
+}
+
+// Overlay
+.overlay-color {
+    @include overlay("color");
+}
+.overlay-image {
+    @include overlay("image");
+}
+.overlay-pattern {
+    @include overlay("pattern");
+}
+.overlay-gradient {
+    @include overlay("gradient");
+}
+
+// Background Colors
+.bg-danger {
+    background-color: $danger !important;
+}
+.bg-success {
+    background-color: $success !important;
+}
+.bg-warning {
+    background-color: bisque !important;
+}
+.bg-primary {
+    background-color: $primary !important;
+}
+.bg-primary-1 {
+    background-color: $primary-1 !important;
+}
+.bg-primary-3 {
+    background-color: $primary-3 !important;
+}
+.bg-secondary {
+    background-color: $secondary !important;
+}
+.bo-color-1 {
+    border-color: $color-1 !important;
+}
+.bo-color-2 {
+    border-color: $color-2 !important;
+}
+.bo-color-3 {
+    border-color: $color-3 !important;
+}
+.bo-color-4 {
+    border-color: $color-4 !important;
+}
+.bo-color-5 {
+    border-color: $color-5 !important;
+}
+.bo-color-6 {
+    border-color: $color-6 !important;
+}
+.bo-primary {
+    border-color: $primary !important;
+}
+.bp-secondary {
+    border-color: $secondary !important;
+}
+.bg-color-1 {
+    background-color: $color-1 !important;
+}
+.bg-color-2 {
+    background-color: $color-2 !important;
+}
+.bg-color-3 {
+    background-color: $color-3 !important;
+}
+.bg-color-4 {
+    background-color: $color-4 !important;
+}
+.bg-color-5 {
+    background-color: $color-5 !important;
+}
+.bg-color-6 {
+    background-color: $color-6 !important;
+}
+.bg-light {
+    background-color: $white !important;
+}
+.bg-dark {
+    background-color: $black !important;
+}
+.bg-base-0 {
+    background-color: $base-0 !important;
+}
+.bg-base-1 {
+    background-color: $base-1 !important;
+}
+.bg-primary {
+    background-color: $primary !important;
+}
+.bg-secondary {
+    background-color: $secondary !important;
+}
+.bg-gradient-side {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to($primary));
+    background-image: linear-gradient(270deg, $primary 0%, transparent 70%);
+}
+.bg-dark-side {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to($base-1));
+    background-image: linear-gradient(270deg, rgba(83, 83, 102, 0.6) 0%, transparent 81%);
+}
+.bg-animation-1 {
+    background: linear-gradient(-45deg, #000, #151515, var(--secondary), var(--primary), #000);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 9s ease infinite;
+    animation: Gradient 9s ease infinite;
+}
+.bg-animation-2 {
+    background: linear-gradient(-45deg, #fff, var(--primary), var(--secondary), var(--primary), #fff);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 9s ease infinite;
+    animation: Gradient 9s ease infinite;
+}
+@each $i in (1, 2, 3, 4, 5, 6, 7, 8, 9, 100) {
+    $j: $i / 10;
+    .bg-dark-#{$i}0 {
+        background-color: rgba(0, 0, 0, $j);
+    }
+}
+@each $i in (1, 2, 3, 4, 5, 6, 7, 8, 9, 100) {
+    $j: $i / 10;
+    .bg-light-#{$i}0 {
+        background-color: rgba(255, 255, 255, $j);
+    }
+}
+@each $i in (0, 45, 90, 135, 180, 225, 270, 315, 360) {
+    .bg-gradient-#{$i} {
+        @include bg-gradient($i);
+    }
+}
+.react-rotating-text-cursor {
+    animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+}
+
+.row-0 {
+    margin-left:0;
+    margin-right:0;
+}
+
+@media (min-width: 1200px) {
+    .row-xl-5 {
+        & > * {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+            max-width: 20%;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .row-lg-5 {
+        & > * {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+            max-width: 20%;
+        }
+    }
+}
+
+.overlay-color {
+    .bg-dark {
+        z-index: 1;
+        opacity: .6 !important;
+        background-color: $primary-3;
+    }
+}
+
+.app-wrapper {
+    max-width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    background-image: linear-gradient(90deg, transparent, rgba(45, 21, 130, 0.06));
+    &:before {
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        z-index: -1;
+        opacity: 0.1;
+        position: fixed;
+        background-repeat: repeat-x;
+    }
+}
+
+
+.select2-container--default .select2-search--inline .select2-search__field {
+    @include placeholder() {
+        color: $text-color;
+        font-weight: bold;
+    }
+}
+
+
+@media(max-width: 768px) {
+    .display-spacing-plus {
+        padding-top: 90px;
+    }
+}
+
+.container {
+    direction: ltr;
+}
