@@ -1,0 +1,21 @@
+{
+  "name": "caffe-ejare",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w sass -o public/v1/assets/css",
+    "compile": "html-includes --src src --dest public"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "html-includes": "^4.3.3",
+    "node-sass": "^4.14.1"
+  },
+  "devDependencies": {
+    "htmlhint": "^0.14.1"
+  }
+}
