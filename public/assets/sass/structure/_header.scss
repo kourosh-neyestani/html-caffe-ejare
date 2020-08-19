@@ -1,3 +1,63 @@
 /*------------------------------------
     Header
 ------------------------------------*/
+$header-height: 80px;
+
+.app-header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    .header-wrap {
+        height: $header-height;
+        display: flex;
+        position: relative;
+        direction: rtl;
+        align-items: center;
+        .header-logo {
+            width: 240px;
+            display: none;
+            height: $header-height;
+            font-size: 21px;
+            font-weight: 700;
+            line-height: $header-height;
+        }
+        .header-links {
+            width: 450px;
+            text-align: left;
+            padding-top: 5px;
+            .button {
+                margin-bottom: 0;
+                &.button-icon {
+                    color: #666;
+                }
+            }
+        }
+        .header-menu {
+            width: 100%;
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0 -21px;
+                li {
+                    font-size: 15px;
+                    display: inline-block;
+                    padding-left: 21px;
+                    padding-right: 21px;
+                }
+            }
+        }
+    }
+    &:before {
+        right: 0;
+        bottom: -3px;
+        width: 100%;
+        height: 4px;
+        content: "";
+        position: absolute;
+        border-radius: 6px;
+        background-color: var(--primary);
+        @extend .bg-animation-2;
+    }
+}

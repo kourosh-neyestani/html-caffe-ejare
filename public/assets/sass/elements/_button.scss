@@ -1,3 +1,332 @@
 /*------------------------------------
     Element: Button
 ------------------------------------*/
+
+.button {
+    position: relative;
+    white-space: nowrap;
+    display: inline-block;
+    margin-right: 2px;
+    border-radius: 6px;
+    transition: all 0.3s;
+    &.button-block {
+        width: 100%;
+        float: inherit;
+        display: block;
+    }
+}
+.button-xs {
+    height: 24px;
+    font-size: 11px;
+    padding: 0 12px;
+    margin-bottom: 0;
+}
+.button-sm {
+    height: 36px;
+    font-size: 12px;
+    padding: 9px 18px;
+}
+.button-circle-sm {
+    width: 36px;
+    height: 36px;
+    font-size: 12px;
+    line-height: 36px;
+}
+.button-md {
+    height: 45px;
+    font-size: 14px;
+    padding: 12px 30px;
+}
+.button-circle-md {
+    width: 45px;
+    height: 45px;
+    font-size: 14px;
+    line-height: 45px;
+}
+.button-lg {
+    height: 45px;
+    font-size: 14px;
+    padding: 12px 27px;
+}
+.button-circle-lg {
+    width: 55px;
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+.button-xl {
+    height: 62px;
+    font-size: 16px;
+    padding: 16px 42px;
+}
+.button-circle-xl {
+    width: 62px;
+    height: 62px;
+    font-size: 20px;
+    line-height: 62px;
+}
+.button-dark {
+    color: #fff;
+    background-color: #242424;
+    &:hover {
+        color: #fff;
+        background-color: #111;
+    }
+}
+.button-light {
+    color: #333;
+    background-color: #fff;
+    &:hover {
+        color: #000;
+        background-color: #eee;
+    }
+}
+.button-default {
+    color: $base-1;
+    background-color: $default;
+    &:hover {
+        color: $base-1;
+        box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+    }
+}
+.button-primary {
+    color: $base-0;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: $primary;
+    &:hover {
+        color: $base-0;
+        background-color: $primary-1;
+    }
+}
+.button-secondary {
+    color: $base-0;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: $secondary;
+    &:hover {
+        color: $base-0;
+        background-color: $secondary-1;
+    }
+}
+.button-gradient {
+    color: #fff;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+    &:hover {
+        color: #fff;
+        -webkit-box-shadow: 0 3px 12px $primary;
+        box-shadow: 0 3px 12px $primary;
+    }
+}
+.button-line-light {
+    color: $base-0;
+    border: 1px solid $base-0;
+}
+.button-line-dark {
+    color: $base-1;
+    border: 1px solid $base-1;
+}
+.button-line-primary {
+    color: $primary;
+    border: 1px solid $primary;
+}
+.button-line-secondary {
+    color: $secondary;
+    border: 1px solid $secondary;
+}
+.button-line-gray {
+    color: $gray;
+    border: 1px solid $gray;
+}
+.button-flat {
+    border-radius: 0;
+}
+.button-circle {
+    border-radius: 50%;
+    border-radius: 50%;
+    i {
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
+.button-radius {
+    border-radius: 24px;
+}
+.button-icon-md {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+}
+.button-icon-lg {
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+    line-height: 60px;
+    text-align: center;
+}
+.button-icon-xl {
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+    line-height: 64px;
+    text-align: center;
+}
+.button {
+    .icon {
+        z-index: 3;
+        position: relative;
+    }
+    .hover-wave {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        position: absolute;
+
+        &:before,
+        &:after {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: "";
+            position: absolute;
+            background-color: $gray;
+            border-radius: 50%;
+        }
+        &:before {
+            opacity: 0.3;
+        }
+        &:after {
+            opacity: 0.15;
+        }
+    }
+
+    &:hover {
+        .hover-wave {
+            opacity: 1;
+
+            &:before {
+                animation: wave-animate 1200ms infinite;
+            }
+            &:after {
+                animation: wave-animate 1500ms infinite;
+            }
+        }
+    }
+}
+
+.button-alt {
+    &:before {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        opacity: 0.15;
+        position: absolute;
+    }
+    &.button-alt-primary {
+        color: $primary;
+
+        &:before {
+            background-color: $primary-1;
+        }
+    }
+    &.button-alt-secondary {
+        color: $secondary;
+
+        &:before {
+            background-color: $secondary-1;
+        }
+    }
+    &.button-circle {
+        &:before {
+            border-radius: 50%;
+        }
+    }
+}
+
+.button {
+    overflow: hidden;
+    position: relative;
+
+    .text {
+        z-index: 1;
+        position: relative;
+    }
+    .wave {
+        top: 0;
+        left: 50%;
+        width: 500px;
+        height: 500px;
+        opacity: 1;
+        position: absolute;
+        margin-top: -480px;
+        margin-left: -250px;
+        border-radius: 43%;
+        transform-origin: 50% 49%;
+        box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+        animation: drift 8000ms infinite linear;
+    }
+    .wave-hover {
+        top: 0;
+        left: 50%;
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+        position: absolute;
+        margin-top: -480px;
+        margin-left: -250px;
+        border-radius: 43%;
+        transform-origin: 50% 49%;
+        box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+        animation: drift 8000ms infinite linear;
+    }
+    &:hover {
+        .wave-hover {
+            opacity: 1;
+        }
+    }
+}
+
+.button-gmail {
+    background-color: #d44638;
+    img {
+        width: 21px;
+    }
+    &:hover {
+        background-color: #b23121;
+    }
+}
+
+.button-arrow {
+    .icon-arrow {
+        top: 6px;
+        width: 45px;
+        height: 2px;
+        display: block;
+        position: relative;
+        background-color: $primary;
+        &:before,
+        &:after {
+            right: 0;
+            width: 10px;
+            height: 2px;
+            content: "";
+            position: absolute;
+            background-color: $primary;
+        }
+        &:before {
+            top: -4px;
+            transform: rotate(45deg);
+        }
+        &:after {
+            bottom: -4px;
+            transform: rotate(-45deg);
+        }
+    }
+}
