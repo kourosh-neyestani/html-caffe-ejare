@@ -2,6 +2,37 @@
     Section
 ------------------------------------*/
 
+.section {
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    .display-spacing {
+        z-index: 9;
+    }
+    .section-shape {
+        z-index: 1;
+        &.shape-1 {
+            top: -6%;
+            left: -1%;
+            width: 400px;
+            position: absolute;
+        }
+        &.shape-2 {
+            top: -30%;
+            right: 0;
+            width: 400px;
+            opacity: 0.3;
+            position: absolute;
+        }
+        &.shape-3 {
+            top: 0;
+            left: 0;
+            width: 50%;
+            position: absolute;
+        }
+    }
+}
 /*------------------------------------
     Section: Search Box Banner
 ------------------------------------*/
