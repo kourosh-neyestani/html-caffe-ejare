@@ -89,6 +89,7 @@
   --primary-1: #1e87ce;
   --primary-3: #0e0b2b;
   --secondary: #941cb9;
+  --secondary: orangered;
   --secondary-1: #0d9223;
   --text-color: #717f94;
   --color-1: #70b6fe;
@@ -1792,7 +1793,7 @@ h6,
   animation: Gradient 9s ease infinite;
 }
 
-.bg-animation-2, .app-header:before {
+.bg-animation-2, .app-header:before, .el-cta:after {
   background: linear-gradient(-45deg, #fff, var(--primary), var(--secondary), var(--primary), #fff);
   background-size: 400% 400%;
   -webkit-animation: Gradient 9s ease infinite;
@@ -2081,6 +2082,79 @@ h6,
 /*------------------------------------
     Footer
 ------------------------------------*/
+.app-footer {
+  color: var(--text-color);
+  overflow: hidden;
+  position: relative;
+  padding: 45px 0 0;
+  border-top: 1px solid var(--gray);
+}
+
+.app-footer .footer-info {
+  z-index: 15;
+  position: relative;
+}
+
+.app-footer .footer-copyright {
+  z-index: 15;
+  padding: 15px 0;
+  position: relative;
+}
+
+.app-footer .footer-copyright p {
+  text-align: center;
+}
+
+.app-footer .footer-widgets {
+  z-index: 15;
+  position: relative;
+  padding: 75px 0;
+}
+
+.app-footer .footer-widgets .widget .widget-title h4 {
+  color: var(--base-1);
+  font-size: 18px;
+  position: relative;
+}
+
+.app-footer .footer-widgets .widget .widget-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.app-footer .footer-widgets .widget .widget-body ul li {
+  display: block;
+  padding-right: 9px;
+  margin-bottom: 9px;
+}
+
+.app-footer .section-shape {
+  z-index: 1;
+}
+
+.app-footer .section-shape.shape-1 {
+  top: -45%;
+  left: -1%;
+  width: 400px;
+  position: absolute;
+}
+
+.app-footer .section-shape.shape-2 {
+  top: -36%;
+  right: 0;
+  width: 400px;
+  opacity: 0.3;
+  position: absolute;
+}
+
+.app-footer .section-shape.shape-3 {
+  top: 0;
+  left: 0;
+  width: 50%;
+  position: absolute;
+}
+
 /*------------------------------------
     Wrapper
 ------------------------------------*/
@@ -3319,19 +3393,28 @@ Forms
     Element: Pagination
 ------------------------------------*/
 .el-pagination {
-  padding: 60px 0 0;
-  direction: ltr;
-  list-style: none;
   text-align: center;
   white-space: nowrap;
-  margin-bottom: 0;
+  padding-top: 75px;
+  display: none !important;
 }
 
-.el-pagination li {
+.el-pagination ul {
+  direction: ltr;
+  list-style: none;
+  display: inline-block;
+  padding: 12px;
+  margin: 0;
+  border-radius: 36px;
+  border: 1px solid var(--gray);
+  background-color: var(--black);
+}
+
+.el-pagination ul li {
   height: 33px;
   min-width: 33px;
   line-height: 33px;
-  color: var(--text-color);
+  color: var(--base-0);
   cursor: pointer;
   font-size: 0.9em;
   text-align: center;
@@ -3343,22 +3426,22 @@ Forms
   border-radius: 50%;
 }
 
-.el-pagination li a {
+.el-pagination ul li a {
   display: block;
 }
 
-.el-pagination li .fa {
+.el-pagination ul li .fa {
   top: 1px;
   padding-left: 12px;
   position: relative;
   display: inline-block;
 }
 
-.el-pagination li:hover {
+.el-pagination ul li:hover {
   color: var(--base-1);
 }
 
-.el-pagination li.active {
+.el-pagination ul li.active {
   color: var(--base-0);
   background-color: var(--primary);
 }
@@ -3372,6 +3455,79 @@ Forms
           box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.09);
   border-radius: 6px;
   background-color: var(--base-0);
+}
+
+/*------------------------------------
+    Element: Call To Action
+------------------------------------*/
+.el-cta {
+  overflow: hidden;
+  position: relative;
+}
+
+.el-cta p {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.el-cta h3 {
+  color: #32335a;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 9px;
+}
+
+.el-cta h3 .text-color {
+  color: var(--primary);
+}
+
+.el-cta .display-center {
+  z-index: 3;
+  text-align: center;
+}
+
+.el-cta .parallax-window {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  position: absolute;
+}
+
+.el-cta:after {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  content: "";
+  position: absolute;
+  border-radius: 6px;
+  background-color: var(--primary);
+}
+
+.el-cta-4 {
+  padding: 30px 0;
+  position: relative;
+}
+
+.el-cta-4 p {
+  text-align: right;
+}
+
+.el-cta-4 .button {
+  left: 0;
+  bottom: 45px;
+  position: absolute;
+}
+
+.el-cta-4 .button .icon {
+  top: 2px;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  margin-left: 3px;
 }
 
 /*------------------------------------
@@ -3389,6 +3545,43 @@ testimonial
 /*------------------------------------
     Section
 ------------------------------------*/
+.section {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.section .display-spacing {
+  z-index: 9;
+}
+
+.section .section-shape {
+  z-index: 1;
+}
+
+.section .section-shape.shape-1 {
+  top: -6%;
+  left: -1%;
+  width: 400px;
+  position: absolute;
+}
+
+.section .section-shape.shape-2 {
+  top: -30%;
+  right: 0;
+  width: 400px;
+  opacity: 0.3;
+  position: absolute;
+}
+
+.section .section-shape.shape-3 {
+  top: 0;
+  left: 0;
+  width: 50%;
+  position: absolute;
+}
+
 /*------------------------------------
     Section: Search Box Banner
 ------------------------------------*/

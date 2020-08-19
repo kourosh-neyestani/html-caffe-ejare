@@ -1,3 +1,71 @@
 /*------------------------------------
     Footer
 ------------------------------------*/
+
+.app-footer {
+    color: $text-color;
+    overflow: hidden;
+    position: relative;
+    padding: 45px 0 0;
+    border-top: 1px solid $gray;
+    .footer-info {
+        z-index: 15;
+        position: relative;
+    }
+    .footer-copyright {
+        z-index: 15;
+        padding: 15px 0;  
+        position: relative;
+        p {
+            text-align: center;
+        }
+    }
+    .footer-widgets {
+        z-index: 15;
+        position: relative;
+        padding: 75px 0;
+        .widget {
+            .widget-title {
+                h4 {
+                    color: $base-1;
+                    font-size: 18px;
+                    position: relative;
+                }
+            }
+            .widget-body {
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        display: block;
+                        padding-right: 9px;
+                        margin-bottom: 9px;
+                    }
+                }
+            }
+        }
+    }
+    .section-shape {
+        z-index: 1;
+        &.shape-1 {
+            top: -45%;
+            left: -1%;
+            width: 400px;
+            position: absolute;
+        }
+        &.shape-2 {
+            top: -36%;
+            right: 0;
+            width: 400px;
+            opacity: 0.3;
+            position: absolute;
+        }
+        &.shape-3 {
+            top: 0;
+            left: 0;
+            width: 50%;
+            position: absolute;
+        }
+    }
+}
