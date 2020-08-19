@@ -1,0 +1,101 @@
+/*------------------------------------
+    Element: Card
+------------------------------------*/
+
+.el-card-product {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 18px;
+    box-shadow: $default-bs;
+    border-radius: $default-br;
+    .image {
+        padding-top: 100%;
+        margin-bottom: 15px;
+        border-bottom: 1px solid $gray;
+        img {
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+    }
+    .footer {
+        padding: 0 20px;
+        white-space: nowrap;
+        .place {
+            i {
+                top: 1px;
+                font-size: 81%;
+                position: relative;
+                margin-left: 3px;
+            }
+        }
+        .price {
+            text-align: left;
+            .label {
+                margin-left: 6px;
+            }
+            .value-sign {
+                display: none;
+            }
+        }
+    }
+    .details {
+        padding: 0 20px;
+        .name {
+            font-size: 16px;
+            line-height: 1.7;
+        }
+    }
+}
+
+/*------------------------------------
+    Element: Pagination
+------------------------------------*/
+
+.el-pagination {
+    padding: 60px 0 0;
+    direction: ltr;
+    list-style: none;
+    text-align: center;
+    white-space: nowrap;
+    margin-bottom: 0;
+    li {
+        height: 33px;
+        min-width: 33px;
+        line-height: 33px;
+        color: $text-color;
+        cursor: pointer;
+        font-size: 0.9em;
+        text-align: center;
+        user-select: none;
+        display: inline-block;
+        border-radius: 50%;
+        a {
+            display: block;
+        }
+        .fa {
+            top: 1px;
+            padding-left: 12px;
+            position: relative;
+            display: inline-block;
+        }
+        &:hover {
+            color: $base-1;
+        }
+        &.active {
+            color: $base-0;
+            background-color: $primary;
+        }
+    }
+}
+
+/*------------------------------------
+    Element: Search Box
+------------------------------------*/
+
+.el-search-box {
+    padding: 15px 30px;
+    box-shadow: $default-bs;
+    border-radius: $default-br;
+    background-color: $base-0;
+}

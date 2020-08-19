@@ -52,6 +52,7 @@
     |   |___ Features
     |   |___ Services
     |   |___ Comments
+    |   |___ Products
     |   |___ Portfolio
     |   |___ Testimonials
     |   |___ Call To Action
@@ -211,6 +212,7 @@ body {
   width: 100%;
   color: var(--base-1);
   margin: 0;
+  padding-top: 80px;
   overflow-x: hidden;
   background-color: var(--base-0);
 }
@@ -1440,7 +1442,7 @@ h6,
 }
 
 .text-danger {
-  color: #F56C6C;
+  color: #f56c6c;
 }
 
 .text-success {
@@ -1666,7 +1668,7 @@ h6,
 }
 
 .bg-danger {
-  background-color: #F56C6C !important;
+  background-color: #f56c6c !important;
 }
 
 .bg-success {
@@ -1998,10 +2000,6 @@ h6,
   }
 }
 
-.container {
-  direction: ltr;
-}
-
 /*------------------------------------
     Structure Styles
 ------------------------------------*/
@@ -2142,8 +2140,741 @@ h6,
     Elements Styles
 ------------------------------------*/
 /*------------------------------------
-    Element: Forms
+Reset
 ------------------------------------*/
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*------------------------------------
+Forms
+------------------------------------*/
+.form select,
+.form textarea,
+.form input[type="tel"],
+.form input[type="text"],
+.form input[type="date"],
+.form input[type="email"],
+.form input[type="number"],
+.form input[type="search"],
+.form input[type="password"] {
+  width: 100%;
+  display: block;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.form textarea,
+.form select[multiple] {
+  min-height: 180px;
+}
+
+/* 
+* Form - Style 1
+*/
+/* 
+* Form - Style 2
+*/
+.form-2 {
+  overflow: hidden;
+  position: relative;
+}
+
+.form-2 .form-item {
+  min-height: 45px;
+  position: relative;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eee;
+}
+
+.form-2 .form-item .input-label {
+  top: 12px;
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+}
+
+.form-2 .form-item .input-switch {
+  top: 8px;
+  right: 0;
+  position: absolute;
+}
+
+.form-2 .input-switch {
+  width: 50px;
+  height: 27px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  border-radius: 27px;
+  border: 1px solid #ccc;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.form-2 .input-switch div {
+  top: 0;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  border-radius: 25px;
+  background-color: #ccc;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.form-2 .input-switch input {
+  display: none;
+}
+
+.form-2 .input-switch input:checked + div {
+  background-color: var(--primary);
+  left: calc(100% - 25px);
+}
+
+.form-2 .input-switch.checked {
+  background-color: #edf8ff;
+  -webkit-box-shadow: inset 0px 0px 0px 1px var(--primary);
+          box-shadow: inset 0px 0px 0px 1px var(--primary);
+}
+
+/* 
+* Form - Style 3
+*/
+.form-3 {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.form-3 .form-item {
+  position: relative;
+  padding-top: 10px;
+  margin-bottom: 15px;
+}
+
+.form-3 .form-item select,
+.form-3 .form-item textarea,
+.form-3 .form-item .input-select,
+.form-3 .form-item input[type="tel"],
+.form-3 .form-item input[type="text"],
+.form-3 .form-item input[type="date"],
+.form-3 .form-item input[type="email"],
+.form-3 .form-item input[type="number"],
+.form-3 .form-item input[type="search"],
+.form-3 .form-item input[type="password"] {
+  width: 100%;
+  display: block;
+  min-height: 45px;
+  padding: 9px 25px;
+  border-radius: 6px;
+  border: 1px solid #e3e3e3;
+  border-bottom: 3px solid #e3e3e3;
+}
+
+.form-3 .form-item select:focus,
+.form-3 .form-item textarea:focus,
+.form-3 .form-item .input-select:focus,
+.form-3 .form-item input[type="tel"]:focus,
+.form-3 .form-item input[type="text"]:focus,
+.form-3 .form-item input[type="date"]:focus,
+.form-3 .form-item input[type="email"]:focus,
+.form-3 .form-item input[type="number"]:focus,
+.form-3 .form-item input[type="search"]:focus,
+.form-3 .form-item input[type="password"]:focus {
+  border-color: var(--primary);
+}
+
+.form-3 .form-item .input-select {
+  padding: 0 !important;
+}
+
+.form-3 .form-item .input-select .select2-container .select2-selection--single {
+  height: 45px;
+}
+
+.form-3 .form-item .input-select .select2-container--default .select2-selection--single .select2-selection__arrow b {
+  right: 30px !important;
+}
+
+.form-3 .form-item .input-select .select2-container--default .select2-selection--single .select2-selection__rendered,
+.form-3 .form-item .input-select .select2-container--default .select2-selection--single .select2-selection__placeholder {
+  color: var(--black);
+  font-size: 12px !important;
+  padding-left: 20px !important;
+}
+
+.form-3 .form-item .input-select-multiple {
+  overflow: hidden;
+  height: 45px !important;
+}
+
+.form-3 .form-item .input-select-multiple input {
+  height: 0 !important;
+  opacity: 0 !important;
+  min-height: inherit !important;
+}
+
+.form-3 .form-item .input-select-multiple .select2-selection__rendered {
+  top: 15px !important;
+  position: relative !important;
+  margin: 0 !important;
+}
+
+.form-3 .form-item .input-checkbox .checkbox-wrap {
+  height: 21px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  padding-top: 2px;
+  padding-left: 33px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.form-3 .form-item .input-checkbox .checkbox-wrap:hover input ~ .checkbox-mark {
+  background-color: #ccc;
+}
+
+.form-3 .form-item .input-checkbox .checkbox-wrap input {
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+.form-3 .form-item .input-checkbox .checkbox-wrap input:checked ~ .checkbox-mark {
+  border-color: var(--primary) !important;
+  background-color: var(--primary) !important;
+}
+
+.form-3 .form-item .input-checkbox .checkbox-wrap input:checked ~ .checkbox-mark:after {
+  display: block;
+}
+
+.form-3 .form-item .input-checkbox .checkbox-wrap .checkbox-mark {
+  top: 0;
+  left: 4px;
+  width: 21px;
+  height: 21px;
+  border-radius: 2px;
+  position: absolute;
+  border: 1px solid #e1e1e1;
+  border-bottom: 3px solid #e1e1e1;
+  background-color: #fff;
+}
+
+.form-3 .form-item .input-checkbox .checkbox-wrap .checkbox-mark:after {
+  top: 2px;
+  right: 7px;
+  width: 7px;
+  height: 12px;
+  content: "";
+  display: none;
+  position: absolute;
+  border: solid var(--white);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.form-3 .form-item .input-checkbox .checkbox-wrap .checkbox-label {
+  color: #333;
+}
+
+.form-3 .form-item .form-label {
+  top: 0;
+  right: 15px;
+  z-index: 9;
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  padding: 0 9px;
+  background-color: var(--base-0);
+}
+
+.form-3 .form-item .form-input-q {
+  margin-bottom: 9px;
+}
+
+.form-3 .form-item .form-error {
+  left: 20px;
+  bottom: -4px;
+  color: #f56c6c;
+  display: inline-block;
+  position: absolute;
+  background-color: var(--base-0);
+}
+
+.form-3 .form-input-divider {
+  width: 100%;
+  height: 30px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  margin: 6px 0;
+}
+
+.form-3 .form-input-divider .or {
+  top: 6px;
+  right: 6px;
+  left: 6px;
+  width: 15px;
+  height: 15px;
+  display: block;
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  z-index: 3;
+}
+
+.form-3 .form-input-divider:before, .form-3 .form-input-divider:after {
+  top: 14px;
+  width: 50%;
+  height: 1px;
+  content: "";
+  position: absolute;
+  background-color: var(--gray);
+}
+
+.form-3 .form-input-divider:before {
+  left: -15px;
+}
+
+.form-3 .form-input-divider:after {
+  right: -15px;
+}
+
+.form-3 .input-fp {
+  top: 2px;
+  color: var(--primary);
+  font-size: 12px;
+  position: relative;
+}
+
+/*
+* Form - 4
+*/
+.form-4 {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.form-4 .form-item {
+  position: relative;
+  padding-top: 10px;
+  margin-bottom: 15px;
+}
+
+.form-4 .form-item input::-webkit-input-placeholder {
+  color: var(--text-color);
+  font-size: 12px;
+}
+
+.form-4 .form-item input:-moz-placeholder {
+  color: var(--text-color);
+  font-size: 12px;
+}
+
+.form-4 .form-item input::-moz-placeholder {
+  color: var(--text-color);
+  font-size: 12px;
+}
+
+.form-4 .form-item input:-ms-input-placeholder {
+  color: var(--text-color);
+  font-size: 12px;
+}
+
+.form-4 .form-item select,
+.form-4 .form-item textarea,
+.form-4 .form-item .input-select,
+.form-4 .form-item input[type="tel"],
+.form-4 .form-item input[type="text"],
+.form-4 .form-item input[type="date"],
+.form-4 .form-item input[type="email"],
+.form-4 .form-item input[type="number"],
+.form-4 .form-item input[type="search"],
+.form-4 .form-item input[type="password"] {
+  width: 100%;
+  display: block;
+  min-height: 45px;
+  padding: 9px 25px;
+  border-radius: 6px;
+  border: 1px solid #e3e3e3;
+  border-bottom: 3px solid #e3e3e3;
+}
+
+.form-4 .form-item select:focus,
+.form-4 .form-item textarea:focus,
+.form-4 .form-item .input-select:focus,
+.form-4 .form-item input[type="tel"]:focus,
+.form-4 .form-item input[type="text"]:focus,
+.form-4 .form-item input[type="date"]:focus,
+.form-4 .form-item input[type="email"]:focus,
+.form-4 .form-item input[type="number"]:focus,
+.form-4 .form-item input[type="search"]:focus,
+.form-4 .form-item input[type="password"]:focus {
+  border-color: var(--primary);
+}
+
+.form-4 .form-item .input-select {
+  padding: 0 !important;
+}
+
+.form-4 .form-item .input-select .select2-container .select2-selection--single {
+  height: 45px;
+}
+
+.form-4 .form-item .input-select .select2-container--default .select2-selection--single .select2-selection__arrow b {
+  right: 30px !important;
+}
+
+.form-4 .form-item .input-select .select2-container--default .select2-selection--single .select2-selection__rendered,
+.form-4 .form-item .input-select .select2-container--default .select2-selection--single .select2-selection__placeholder {
+  color: var(--black);
+  font-size: 12px !important;
+  padding-left: 20px !important;
+}
+
+.form-4 .form-item .input-select-multiple {
+  overflow: hidden;
+  height: 45px !important;
+}
+
+.form-4 .form-item .input-select-multiple input {
+  height: 0 !important;
+  opacity: 0 !important;
+  min-height: inherit !important;
+}
+
+.form-4 .form-item .input-select-multiple .select2-selection__rendered {
+  top: 15px !important;
+  position: relative !important;
+  margin: 0 !important;
+}
+
+.form-4 .form-item .input-switch {
+  width: 100%;
+  display: block;
+  height: 45px;
+  cursor: pointer;
+  padding: 7px 25px;
+  position: relative;
+  border-radius: 6px;
+  border: 1px solid #e3e3e3;
+  border-bottom: 3px solid #e3e3e3;
+}
+
+.form-4 .form-item .input-switch label .label {
+  top: 6px;
+  cursor: pointer;
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-color);
+  position: relative;
+}
+
+.form-4 .form-item .input-switch label div {
+  top: 8px;
+  left: 9px;
+  width: 50px;
+  height: 27px;
+  float: left;
+  cursor: pointer;
+  position: absolute;
+  border-radius: 27px;
+  border: 1px solid #ccc;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.form-4 .form-item .input-switch label div div {
+  top: 0;
+  right: 0px;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  border-radius: 25px;
+  background-color: #ccc;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.form-4 .form-item .input-switch label div input {
+  display: none;
+}
+
+.form-4 .form-item .input-switch label div input:checked + div {
+  background-color: var(--primary);
+  right: calc(100% - 25px);
+}
+
+.form-4 .form-item .input-switch label div.checked {
+  background-color: #edf8ff;
+  -webkit-box-shadow: inset 0px 0px 0px 1px var(--primary);
+          box-shadow: inset 0px 0px 0px 1px var(--primary);
+}
+
+.form-4 .form-item .input-checkbox .checkbox-wrap {
+  height: 21px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  padding-top: 2px;
+  padding-left: 33px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.form-4 .form-item .input-checkbox .checkbox-wrap:hover input ~ .checkbox-mark {
+  background-color: #ccc;
+}
+
+.form-4 .form-item .input-checkbox .checkbox-wrap input {
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+.form-4 .form-item .input-checkbox .checkbox-wrap input:checked ~ .checkbox-mark {
+  border-color: var(--primary) !important;
+  background-color: var(--primary) !important;
+}
+
+.form-4 .form-item .input-checkbox .checkbox-wrap input:checked ~ .checkbox-mark:after {
+  display: block;
+}
+
+.form-4 .form-item .input-checkbox .checkbox-wrap .checkbox-mark {
+  top: 0;
+  left: 4px;
+  width: 21px;
+  height: 21px;
+  border-radius: 2px;
+  position: absolute;
+  border: 1px solid #e1e1e1;
+  border-bottom: 3px solid #e1e1e1;
+  background-color: #fff;
+}
+
+.form-4 .form-item .input-checkbox .checkbox-wrap .checkbox-mark:after {
+  top: 2px;
+  right: 7px;
+  width: 7px;
+  height: 12px;
+  content: "";
+  display: none;
+  position: absolute;
+  border: solid var(--white);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.form-4 .form-item .input-checkbox .checkbox-wrap .checkbox-label {
+  color: #333;
+}
+
+.form-4 .form-item .form-label {
+  color: var(--base-0);
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin-bottom: 7px;
+}
+
+.form-4 .form-item .form-label span {
+  z-index: 3;
+  position: relative;
+}
+
+.form-4 .form-item .form-label:before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  opacity: 1;
+  display: block;
+  position: absolute;
+  background-color: orangered;
+}
+
+.form-4 .form-item .form-input-q {
+  margin-bottom: 9px;
+}
+
+.form-4 .form-item .form-error {
+  left: 20px;
+  bottom: -4px;
+  color: #f56c6c;
+  display: inline-block;
+  position: absolute;
+  background-color: var(--base-0);
+}
+
+.form-4 .form-item .wrap-button {
+  padding-top: 25px !important;
+}
+
+.form-4 .form-input-divider {
+  width: 100%;
+  height: 30px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  margin: 6px 0;
+}
+
+.form-4 .form-input-divider .or {
+  top: 6px;
+  right: 6px;
+  left: 6px;
+  width: 15px;
+  height: 15px;
+  display: block;
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  z-index: 3;
+}
+
+.form-4 .form-input-divider:before, .form-4 .form-input-divider:after {
+  top: 14px;
+  width: 50%;
+  height: 1px;
+  content: "";
+  position: absolute;
+  background-color: var(--gray);
+}
+
+.form-4 .form-input-divider:before {
+  left: -15px;
+}
+
+.form-4 .form-input-divider:after {
+  right: -15px;
+}
+
+.form-4 .input-fp {
+  top: 2px;
+  color: var(--primary);
+  font-size: 12px;
+  position: relative;
+}
+
+.form-4 .wrap-button {
+  padding-top: 9px;
+}
+
+.quantity {
+  position: relative;
+}
+
+.quantity input {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.quantity .quantity-button {
+  width: 30px;
+  height: 30px;
+  color: var(--base-0);
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 31px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--primary);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.quantity .quantity-button.quantity-up {
+  top: 7px;
+  right: 39px;
+  position: absolute;
+}
+
+.quantity .quantity-button.quantity-down {
+  top: 7px;
+  right: 7px;
+  position: absolute;
+}
+
+#form-details-of-classrooms {
+  position: relative;
+  padding-top: 30px;
+  padding-left: 30px;
+  border-left: 1px solid var(--gray);
+}
+
+#form-details-of-classrooms h4 {
+  color: var(--primary);
+  font-size: 16px;
+  position: relative;
+  padding-left: 15px;
+}
+
+#form-details-of-classrooms h4:before {
+  top: 11px;
+  left: -30px;
+  width: 30px;
+  height: 1px;
+  content: "";
+  position: absolute;
+  background-color: var(--gray);
+}
+
+#form-details-of-classrooms h4:after {
+  top: 6px;
+  left: -6px;
+  width: 12px;
+  height: 12px;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--primary);
+}
+
+#form-details-of-classrooms ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#form-details-of-classrooms ul li {
+  display: block;
+}
+
+#form-details-of-classrooms ul li:not(:last-child) {
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--gray);
+}
+
 /*------------------------------------
     Element: Button
 ------------------------------------*/
@@ -2528,19 +3259,127 @@ h6,
 }
 
 /*------------------------------------
+    Element: Card
+------------------------------------*/
+.el-card-product {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 18px;
+  -webkit-box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.09);
+          box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.09);
+  border-radius: 6px;
+}
+
+.el-card-product .image {
+  padding-top: 100%;
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--gray);
+}
+
+.el-card-product .image img {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.el-card-product .footer {
+  padding: 0 20px;
+  white-space: nowrap;
+}
+
+.el-card-product .footer .place i {
+  top: 1px;
+  font-size: 81%;
+  position: relative;
+  margin-left: 3px;
+}
+
+.el-card-product .footer .price {
+  text-align: left;
+}
+
+.el-card-product .footer .price .label {
+  margin-left: 6px;
+}
+
+.el-card-product .footer .price .value-sign {
+  display: none;
+}
+
+.el-card-product .details {
+  padding: 0 20px;
+}
+
+.el-card-product .details .name {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/*------------------------------------
+    Element: Pagination
+------------------------------------*/
+.el-pagination {
+  padding: 60px 0 0;
+  direction: ltr;
+  list-style: none;
+  text-align: center;
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+
+.el-pagination li {
+  height: 33px;
+  min-width: 33px;
+  line-height: 33px;
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 0.9em;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.el-pagination li a {
+  display: block;
+}
+
+.el-pagination li .fa {
+  top: 1px;
+  padding-left: 12px;
+  position: relative;
+  display: inline-block;
+}
+
+.el-pagination li:hover {
+  color: var(--base-1);
+}
+
+.el-pagination li.active {
+  color: var(--base-0);
+  background-color: var(--primary);
+}
+
+/*------------------------------------
+    Element: Search Box
+------------------------------------*/
+.el-search-box {
+  padding: 15px 30px;
+  -webkit-box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.09);
+          box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.09);
+  border-radius: 6px;
+  background-color: var(--base-0);
+}
+
+/*------------------------------------
     Sections Styles
 ------------------------------------*/
 /*------------------------------------
     Hero
 ------------------------------------*/
-.section-hero {
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-  background-color: var(--gray);
-  margin-bottom: 100vh;
-}
-
 /*------------------------------------
     Section: Posts/Blog
 ------------------------------------*/
@@ -2551,6 +3390,31 @@ testimonial
     Section
 ------------------------------------*/
 /*------------------------------------
+    Section: Search Box Banner
+------------------------------------*/
+.section-search-box {
+  height: 540px;
+  position: relative;
+  background-color: var(--gray);
+}
+
+.section-search-box .display-custom {
+  padding-top: 114px;
+}
+
+.section-search-box:before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  opacity: 1;
+  position: absolute;
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--base-0)), to(transparent));
+  background: linear-gradient(0deg, var(--base-0), transparent);
+}
+
+/*------------------------------------
     Section: Contact
 ------------------------------------*/
 /*------------------------------------
@@ -2559,6 +3423,14 @@ testimonial
 /*------------------------------------
     Section: Service
 ------------------------------------*/
+/*------------------------------------
+    Section: Products
+------------------------------------*/
+.section-products {
+  top: -90px;
+  position: relative;
+}
+
 /*------------------------------------
     Section: Portfolio
 ------------------------------------*/
