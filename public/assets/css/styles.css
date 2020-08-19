@@ -2012,6 +2012,7 @@ h6,
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 999;
   position: fixed;
   background-color: #fff;
 }
@@ -2532,6 +2533,14 @@ h6,
 /*------------------------------------
     Hero
 ------------------------------------*/
+.section-hero {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--gray);
+  margin-bottom: 100vh;
+}
+
 /*------------------------------------
     Section: Posts/Blog
 ------------------------------------*/
