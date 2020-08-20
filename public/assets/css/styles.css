@@ -85,11 +85,15 @@
   --base-2: "";
   --base-3: "";
   --primary: #239df0;
+  --primary: hotpink;
   --primary: #f6931c;
+  --primary: #51946d;
   --primary-1: #1e87ce;
   --primary-3: #0e0b2b;
   --secondary: #941cb9;
+  --secondary: #b91c7d;
   --secondary: orangered;
+  --secondary: rgb(160, 160, 160);
   --secondary-1: #0d9223;
   --text-color: #717f94;
   --color-1: #70b6fe;
@@ -2788,7 +2792,7 @@ Forms
   opacity: 1;
   display: block;
   position: absolute;
-  background-color: orangered;
+  background-color: var(--secondary);
 }
 
 .form-4 .form-item .form-input-q {
