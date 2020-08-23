@@ -1,3 +1,32 @@
 /*------------------------------------
     Hero
 ------------------------------------*/
+
+.section-hero {
+    &.section-hero-1 {
+        height: 100vh;
+        .content {
+            max-width: 600px;
+            p {
+                font-size: 16px;
+                margin-bottom: 30px;
+            }
+            h1 {
+                font-size: 360%;
+                font-weight: 400;
+                font-family: $font-family-1;
+                line-height: 1.6;
+                span {
+                    color: $primary;
+                    font-weight: 700;
+                }
+            }
+        }
+        .footer {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+        }
+    }
+}

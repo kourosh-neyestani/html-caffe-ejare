@@ -84,17 +84,18 @@
   --base-1: #151812;
   --base-2: "";
   --base-3: "";
-  --primary: #239df0;
-  --primary: hotpink;
   --primary: #f6931c;
+  --primary: #007E33;
   --primary: #51946d;
-  --primary-1: #1e87ce;
+  --primary: #2e7d32;
   --primary-3: #0e0b2b;
   --secondary: #941cb9;
-  --secondary: #b91c7d;
   --secondary: orangered;
-  --secondary: rgb(160, 160, 160);
+  --secondary: #b91c7d;
+  --secondary: #3023a5;
   --secondary-1: #0d9223;
+  --tertiary: rgb(160, 160, 160);
+  --tertiary-3: #3E4A3D;
   --text-color: #717f94;
   --color-1: #70b6fe;
   --color-2: #c670fe;
@@ -217,7 +218,6 @@ body {
   width: 100%;
   color: var(--base-1);
   margin: 0;
-  padding-top: 80px;
   overflow-x: hidden;
   background-color: var(--base-0);
 }
@@ -3462,6 +3462,94 @@ Forms
 }
 
 /*------------------------------------
+    Element: Category
+------------------------------------*/
+.el-category-icons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 -6px;
+  white-space: nowrap;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: scroll;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.el-category-icons ul::-webkit-scrollbar {
+  height: 3px;
+}
+
+.el-category-icons ul::-webkit-scrollbar-track {
+  background-color: var(--gray);
+}
+
+.el-category-icons ul::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+}
+
+.el-category-icons ul li {
+  width: 90px;
+  display: inline-block;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-bottom: 18px;
+}
+
+.el-category-icons ul li a {
+  display: block;
+  text-align: center;
+  position: relative;
+}
+
+.el-category-icons ul li a .text {
+  white-space: nowrap;
+  text-align: center;
+}
+
+.el-category-icons ul li a .icon {
+  width: 54px;
+  height: 54px;
+  display: block;
+  line-height: 54px;
+  position: relative;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 auto 12px;
+  background-color: #ccc;
+}
+
+.el-category-icons ul li a .icon img {
+  width: 27px;
+  height: 27px;
+  z-index: 1;
+  position: relative;
+}
+
+.el-category-icons ul li a .icon:before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  opacity: .3;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transition: all 450ms;
+  transition: all 450ms;
+}
+
+.el-category-icons ul li:hover a {
+  color: var(--primary);
+}
+
+.el-category-icons ul li:hover a .icon:before {
+  background: var(--primary);
+}
+
+/*------------------------------------
     Element: Call To Action
 ------------------------------------*/
 .el-cta {
@@ -3540,6 +3628,38 @@ Forms
 /*------------------------------------
     Hero
 ------------------------------------*/
+.section-hero.section-hero-1 {
+  height: 100vh;
+}
+
+.section-hero.section-hero-1 .content {
+  max-width: 600px;
+}
+
+.section-hero.section-hero-1 .content p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.section-hero.section-hero-1 .content h1 {
+  font-size: 360%;
+  font-weight: 400;
+  font-family: "iranyekan", sans-serif;
+  line-height: 1.6;
+}
+
+.section-hero.section-hero-1 .content h1 span {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.section-hero.section-hero-1 .footer {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
 /*------------------------------------
     Section: Posts/Blog
 ------------------------------------*/
