@@ -7,7 +7,7 @@
         var params = {
             items: 1,
             slideBy: 1,
-            rtl: false,
+            rtl: true,
             nav: false,
             loop: false,
             dots: false,
