@@ -3394,6 +3394,40 @@ Forms
 }
 
 /*------------------------------------
+    Element: Heading
+------------------------------------*/
+.el-heading.el-heading-3 {
+  position: relative;
+  padding-top: 6px;
+  padding-bottom: 15px;
+}
+
+.el-heading.el-heading-3 h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.el-heading.el-heading-3 h3 {
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.el-heading.el-heading-3 .button {
+  top: 45px;
+  left: 0px;
+  position: absolute;
+}
+
+/*------------------------------------
+    Element: Slider
+------------------------------------*/
+.el-slider-items .owl-item {
+  padding: 3px 0;
+}
+
+/*------------------------------------
     Element: Pagination
 ------------------------------------*/
 .el-pagination {
@@ -3479,15 +3513,15 @@ Forms
 }
 
 .el-category-icons ul::-webkit-scrollbar {
-  height: 3px;
+  height: 4px;
 }
 
 .el-category-icons ul::-webkit-scrollbar-track {
-  background-color: var(--gray);
+  background-color: #eee;
 }
 
 .el-category-icons ul::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
+  background-color: #c9c9c9;
 }
 
 .el-category-icons ul li {

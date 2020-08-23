@@ -49,6 +49,43 @@
 }
 
 /*------------------------------------
+    Element: Heading
+------------------------------------*/
+
+.el-heading {
+    &.el-heading-3 {
+        position: relative;
+        padding-top: 6px;
+        padding-bottom: 15px;
+        h2 {
+            font-size: 40px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        h3 {
+            font-size: 40px;
+            font-weight: 300;
+            margin-bottom: 15px;
+        }
+        .button {
+            top: 45px;
+            left: 0px;
+            position: absolute;
+        }
+    }
+}
+
+/*------------------------------------
+    Element: Slider
+------------------------------------*/
+
+.el-slider-items {
+    .owl-item {
+        padding: 3px 0;
+    }
+}
+
+/*------------------------------------
     Element: Pagination
 ------------------------------------*/
 
@@ -123,13 +160,13 @@
         overflow-x: scroll;
         user-select: none;
         &::-webkit-scrollbar {
-            height: 3px;
+            height: 4px;
         }
         &::-webkit-scrollbar-track {
-            background-color: $gray;
+            background-color: #eee;
         }
         &::-webkit-scrollbar-thumb {
-            background-color: darkgrey;
+            background-color: #c9c9c9;
         }
         li {
             width: 90px;
