@@ -10,6 +10,7 @@ $header-height: 80px;
     z-index: 999;
     position: fixed;
     background-color: #fff;
+    transition: background 450ms;
     .header-wrap {
         height: $header-height;
         display: flex;
@@ -62,3 +63,26 @@ $header-height: 80px;
         @extend .bg-animation-2;
     }
 }
+
+// Moods
+.app-header {
+    &.glass {
+        color: $gray;
+        background-color: transparent;
+        &:before {
+            background: transparent;
+        }
+    }
+}
+
+// Sticky
+.app-header {
+    &.sticky {
+        color: $base-1;
+        background-color: #fff;
+        &:before {
+            @extend .bg-animation-2;
+        }
+    }
+}
+

@@ -1,6 +1,20 @@
 (function ($) {
     "use strict";
 
+    var AFRA = {};
+
+    /*====== Sticky Navigation Menu ======*/
+    AFRA.StickyHeader = function () {
+        var header = $(".app-header");
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > header.height()) {
+                header.addClass("sticky");
+            } else {
+                header.removeClass("sticky");
+            }
+        });
+    };
+
     /*====== Owl Carousel Setting ======*/
     var owlEvent = function () {
         var i;
@@ -20,10 +34,10 @@
             autoplayTimeout: 6000,
             autoplayHoverPause: true,
             stagePadding: 0,
-            navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+            navText: ['<i class="fa fa-angle-right"></i>', '<i class="fa fa-angle-left"></i>'],
         };
         params.responsive = {
-            0: {items: 1}
+            0: { items: 1 },
         };
         if (typeof $(this).data("breakpoint") != "undefined") {
             var j;
@@ -33,13 +47,13 @@
 
                 if (b.length == 2) {
                     params.responsive[b[0]] = {
-                        items: parseInt(b[1])
+                        items: parseInt(b[1]),
                     };
                 }
             }
         } else {
             params.responsive[768] = {
-                items: params.items
+                items: params.items,
             };
         }
         for (i in params) {
@@ -55,4 +69,9 @@
 
     $(".owl-carousel").each(owlEvent);
 
+    $(window).on("load", function () {});
+
+    $(document).ready(function () {
+        AFRA.StickyHeader();
+    });
 })($);
