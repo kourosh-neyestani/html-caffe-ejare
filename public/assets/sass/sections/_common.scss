@@ -32,6 +32,57 @@
             position: absolute;
         }
     }
+    &.section-wave {
+        &.section-wave-1 {
+            &:after {
+                right: 0;
+                bottom: -1px;
+                width: 100%;
+                height: 20%;
+                content: "";
+                position: absolute;
+                background: no-repeat url("../images/shapes/wave-1.png") bottom center / cover;
+            }
+        }
+        &.section-wave-2 {
+            &:after {
+                right: 0;
+                bottom: -90px;
+                width: 100%;
+                height: 20%;
+                content: "";
+                position: absolute;
+                background: no-repeat url("../images/shapes/wave-2.png") bottom center / cover;
+            }
+        }
+        &.section-wave-3 {
+            &:after {
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 300px;
+                content: "";
+                position: absolute;
+                background: no-repeat url("../images/shapes/wave-3.png") bottom center / cover;
+            }
+        }
+        &.section-wave-6 {
+            &:after {
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 30px;
+                content: "";
+                position: absolute;
+                background: repeat-x url("../images/shapes/wave-6.png") bottom center / contain;
+            }
+        }
+    }
+    &.section-divider {
+        &.section-divider-1 {
+            border-bottom: 1px solid $gray;
+        }
+    }
 }
 /*------------------------------------
     Section: Search Box Banner

@@ -4,14 +4,19 @@
 
 .section-hero {
     &.section-hero-1 {
-        height: 100vh;
+        height: 108vh;
+        background-color: #151515;
         .content {
             max-width: 600px;
+            text-align: center;
+            margin: auto;
             p {
+                color: #ccc;
                 font-size: 16px;
                 margin-bottom: 30px;
             }
             h1 {
+                color: $base-0;
                 font-size: 360%;
                 font-weight: 400;
                 font-family: $font-family-1;
@@ -25,7 +30,7 @@
         .footer {
             left: 0;
             right: 0;
-            bottom: 0;
+            bottom: 54px;
             position: absolute;
         }
     }

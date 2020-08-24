@@ -151,22 +151,17 @@
 
 .el-category-icons {
     ul {
-        list-style: none;
-        padding: 0;
-        margin: 0 -6px;
-        white-space: nowrap;
         width: 100%;
         max-width: 100%;
+        list-style: none;
+        white-space: nowrap;
+        padding: 0;
+        margin: 0 -6px;
         overflow-x: scroll;
         user-select: none;
         &::-webkit-scrollbar {
-            height: 4px;
-        }
-        &::-webkit-scrollbar-track {
-            background-color: #eee;
-        }
-        &::-webkit-scrollbar-thumb {
-            background-color: #c9c9c9;
+            height: 0;
+            opacity: 0;
         }
         li {
             width: 90px;
@@ -175,6 +170,7 @@
             padding-right: 6px;
             margin-bottom: 18px;
             a {
+                color: #ccc;
                 display: block;
                 text-align: center;
                 position: relative;
@@ -191,7 +187,7 @@
                     border-radius: 50%;
                     text-align: center;
                     margin: 0 auto 12px;
-                    background-color: #e3e3e3;
+                    background-color: #f6f6f6;
                     img {
                         width: 27px;
                         height: 27px;
