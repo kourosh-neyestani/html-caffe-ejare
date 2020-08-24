@@ -9,28 +9,27 @@
         .content {
             max-width: 600px;
             text-align: center;
-            margin: auto;
+            margin: 0 auto 90px;
             p {
                 color: #ccc;
-                font-size: 16px;
+                font-size: 18px;
                 margin-bottom: 30px;
             }
             h1 {
                 color: $base-0;
                 font-size: 360%;
-                font-weight: 400;
+                font-weight: 700;
                 font-family: $font-family-1;
                 line-height: 1.6;
                 span {
                     color: $primary;
-                    font-weight: 700;
                 }
             }
         }
         .footer {
             left: 0;
             right: 0;
-            bottom: 54px;
+            bottom: 15px;
             position: absolute;
         }
     }
