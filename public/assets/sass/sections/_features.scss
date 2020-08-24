@@ -1,3 +1,15 @@
 /*------------------------------------
     Section: Features
 ------------------------------------*/
+
+.section-features {
+    &.section-features-1 {
+        .item {
+            position: relative;
+            padding-top: 222px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            background-color: $primary;
+        }
+    }
+}
