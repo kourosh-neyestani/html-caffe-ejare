@@ -308,6 +308,21 @@
     }
 }
 
+
+/*------------------------------------
+    Element: Horizontal Line
+------------------------------------*/
+
+.el-hr {
+    width: 100%;
+    height: 1px;
+    display: block;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    background-color: $gray;
+}
+
 /*------------------------------------
     Element: Call To Action
 ------------------------------------*/
