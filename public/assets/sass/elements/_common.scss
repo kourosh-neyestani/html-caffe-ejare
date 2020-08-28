@@ -77,6 +77,124 @@
 }
 
 /*------------------------------------
+    Element: Tabs
+------------------------------------*/
+
+.el-tabs {
+    overflow: hidden;
+    position: relative;
+    padding-top: 45px;
+    .el-tabs-links {
+        ul {
+            list-style: none;
+            user-select: none;
+            border-bottom: 1px solid #ccc;
+            padding: 0;
+            margin: 0;
+            li {
+                bottom: -4px;
+                height: 60px;
+                color: $text-color;
+                cursor: pointer;
+                display: inline-block;
+                font-weight: 700;   
+                position: relative;
+                padding: 0 30px;
+                line-height: 60px;
+                border-bottom: 4px solid transparent;
+                &.active {
+                    color: $primary;
+                    cursor: inherit;
+                    border-color: $primary;
+                }
+            }
+        }
+    }
+    .el-tabs-content {
+        & > ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            & > li {
+                padding: 30px;
+                padding-top: 45px;
+                h2,
+                h3,
+                h4 {
+                    font-size: 24px;
+                    margin-bottom: 39px;
+                }
+                form {
+                    padding-left: 15px;
+                }
+                &:not(.active) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+/*------------------------------------
+    Element: Table
+------------------------------------*/
+
+.el-table {
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    margin: 0;
+    tbody {
+        width: 100%;
+        display: block;
+        margin: 0;
+        tr {
+            width: 100%;
+            height: 45px;
+            display: block;
+            font-size: 12px;
+            margin-bottom: 6px;
+            td {
+                color: #333;
+                display: inline-block;
+                overflow: hidden;
+                line-height: 45px;
+                white-space: nowrap;
+                &.specname {
+                    width: 20%;
+                    padding: 0 15px;
+                    margin-left: 1%;
+                }
+                &.specvalue {
+                    width: 78%;
+                    padding: 0 15px;
+                }
+            }
+            &:nth-child(odd) {
+                td {
+                    background: #f7f7f7;
+                }
+            }
+        }
+    }
+}
+
+/*------------------------------------
+    Element: Stars
+------------------------------------*/
+
+.el-stars {
+    direction: ltr;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+        display: inline-block;
+        font-size: 12px;
+    }
+}
+
+/*------------------------------------
     Element: Slider
 ------------------------------------*/
 
@@ -252,6 +370,55 @@
             right: -3%;
             background: -webkit-linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3));
             background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3));
+        }
+    }
+}
+
+/*------------------------------------
+    Element: Comments
+------------------------------------*/
+
+.el-comments {
+    color: $text-color;
+    overflow: hidden;
+    position: relative;
+    & > ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        & > li {
+            display: block;
+            position: relative;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid $gray;
+            .el-comments-date {
+                font-size: 12px;
+                white-space: nowrap;
+                padding-right: 15px;
+            }
+            .el-comments-author {
+                color: $base-1;
+                font-size: 12px;
+                white-space: nowrap;
+                margin: auto;
+            }
+            .el-comments-avatar {
+                width: 69px;
+                height: 69px;
+                overflow: hidden;
+                position: relative;
+                border-radius: 50%;
+                margin-bottom: 9px;
+            }
+            .el-comments-content {
+                padding-top: 15px;
+                padding-right: 15px;
+                p {
+                    color: $base-1;
+                    font-size: 12px;
+                }
+            }
         }
     }
 }

@@ -122,13 +122,16 @@ Forms
             width: 100%;
             display: block;
             min-height: 45px;
-            padding: 9px 25px;
+            padding: 12px 25px;
             border-radius: 6px;
             border: 1px solid #e3e3e3;
             border-bottom: 3px solid #e3e3e3;
             &:focus {
                 border-color: $primary;
             }
+        }
+        textarea {
+            padding-top: 15px;
         }
         .input-select {
             padding: 0 !important;

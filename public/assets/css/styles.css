@@ -459,7 +459,6 @@ form {
 }
 
 fieldset {
-  border: 1px solid #c0c0c0;
   margin: 0 2px;
   min-width: inherit;
   padding: 0.35em 0.625em 0.75em;
@@ -532,7 +531,6 @@ textarea {
 }
 
 table {
-  border-bottom: 1px solid #ededed;
   border-collapse: collapse;
   border-spacing: 0;
   font-size: 14px;
@@ -545,7 +543,6 @@ caption,
 th,
 td {
   font-weight: normal;
-  text-align: left;
 }
 
 caption {
@@ -559,7 +556,6 @@ th {
 }
 
 td {
-  border-top: 1px solid #ededed;
   padding: 6px 10px 6px 0;
 }
 
@@ -2394,7 +2390,7 @@ Forms
   width: 100%;
   display: block;
   min-height: 45px;
-  padding: 9px 25px;
+  padding: 12px 25px;
   border-radius: 6px;
   border: 1px solid #e3e3e3;
   border-bottom: 3px solid #e3e3e3;
@@ -2411,6 +2407,10 @@ Forms
 .form-3 .form-item input[type="search"]:focus,
 .form-3 .form-item input[type="password"]:focus {
   border-color: var(--primary);
+}
+
+.form-3 .form-item textarea {
+  padding-top: 15px;
 }
 
 .form-3 .form-item .input-select {
@@ -3465,6 +3465,133 @@ Forms
 }
 
 /*------------------------------------
+    Element: Tabs
+------------------------------------*/
+.el-tabs {
+  overflow: hidden;
+  position: relative;
+  padding-top: 45px;
+}
+
+.el-tabs .el-tabs-links ul {
+  list-style: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-bottom: 1px solid #ccc;
+  padding: 0;
+  margin: 0;
+}
+
+.el-tabs .el-tabs-links ul li {
+  bottom: -4px;
+  height: 60px;
+  color: var(--text-color);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  position: relative;
+  padding: 0 30px;
+  line-height: 60px;
+  border-bottom: 4px solid transparent;
+}
+
+.el-tabs .el-tabs-links ul li.active {
+  color: var(--primary);
+  cursor: inherit;
+  border-color: var(--primary);
+}
+
+.el-tabs .el-tabs-content > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.el-tabs .el-tabs-content > ul > li {
+  padding: 30px;
+  padding-top: 45px;
+}
+
+.el-tabs .el-tabs-content > ul > li h2,
+.el-tabs .el-tabs-content > ul > li h3,
+.el-tabs .el-tabs-content > ul > li h4 {
+  font-size: 24px;
+  margin-bottom: 39px;
+}
+
+.el-tabs .el-tabs-content > ul > li form {
+  padding-left: 15px;
+}
+
+.el-tabs .el-tabs-content > ul > li:not(.active) {
+  display: none;
+}
+
+/*------------------------------------
+    Element: Table
+------------------------------------*/
+.el-table {
+  width: 100%;
+  display: block;
+  font-size: 14px;
+  margin: 0;
+}
+
+.el-table tbody {
+  width: 100%;
+  display: block;
+  margin: 0;
+}
+
+.el-table tbody tr {
+  width: 100%;
+  height: 45px;
+  display: block;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.el-table tbody tr td {
+  color: #333;
+  display: inline-block;
+  overflow: hidden;
+  line-height: 45px;
+  white-space: nowrap;
+}
+
+.el-table tbody tr td.specname {
+  width: 20%;
+  padding: 0 15px;
+  margin-left: 1%;
+}
+
+.el-table tbody tr td.specvalue {
+  width: 78%;
+  padding: 0 15px;
+}
+
+.el-table tbody tr:nth-child(odd) td {
+  background: #f7f7f7;
+}
+
+/*------------------------------------
+    Element: Stars
+------------------------------------*/
+.el-stars {
+  direction: ltr;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.el-stars li {
+  display: inline-block;
+  font-size: 12px;
+}
+
+/*------------------------------------
     Element: Slider
 ------------------------------------*/
 .el-slider-items {
@@ -3675,6 +3802,61 @@ Forms
   right: -3%;
   background: -webkit-gradient(linear, left top, right top, from(transparent), to(rgba(255, 255, 255, 0.3)));
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3));
+}
+
+/*------------------------------------
+    Element: Comments
+------------------------------------*/
+.el-comments {
+  color: var(--text-color);
+  overflow: hidden;
+  position: relative;
+}
+
+.el-comments > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.el-comments > ul > li {
+  display: block;
+  position: relative;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--gray);
+}
+
+.el-comments > ul > li .el-comments-date {
+  font-size: 12px;
+  white-space: nowrap;
+  padding-right: 15px;
+}
+
+.el-comments > ul > li .el-comments-author {
+  color: var(--base-1);
+  font-size: 12px;
+  white-space: nowrap;
+  margin: auto;
+}
+
+.el-comments > ul > li .el-comments-avatar {
+  width: 69px;
+  height: 69px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50%;
+  margin-bottom: 9px;
+}
+
+.el-comments > ul > li .el-comments-content {
+  padding-top: 15px;
+  padding-right: 15px;
+}
+
+.el-comments > ul > li .el-comments-content p {
+  color: var(--base-1);
+  font-size: 12px;
 }
 
 /*------------------------------------
