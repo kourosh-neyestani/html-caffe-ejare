@@ -168,6 +168,94 @@
     }
 }
 
+.el-carousel-product {
+    position: relative;
+    .owl-carousel {
+        .owl-item {
+            padding: 3px 0;
+        }
+        .owl-nav {
+            .owl-prev,
+            .owl-next {
+                top: calc(50%);
+                width: 45px;
+                height: 45px;
+                z-index: 15;
+                display: block;
+                position: absolute;
+                border-radius: 50%;
+                margin-top: -21px;
+                background: rgba(0, 0, 0, 0.3);
+                i {
+                    color: $base-0;
+                    font-size: 24px;
+                    font-weight: 900;
+                    position: relative;
+                }
+                &.owl-prev {
+                    right: 15px;
+                    i {
+                        right: -1px;
+                    }
+                }
+                &.owl-next {
+                    left: 15px;
+                    i {
+                        left: -1px;
+                    }
+                }
+                &:hover {
+                    background: $primary;
+                }
+                &.disabled {
+                    opacity: 0;
+                    cursor: no-drop;
+                }
+            }
+        }
+        .owl-dots {
+            left: 0;
+            right: 0;
+            bottom: 6px;
+            position: absolute;
+            min-height: 40px;
+            line-height: 40px;
+            text-align: center;
+            margin: 0 auto;
+            .owl-dot {
+                width: 7px;
+                height: 7px;
+                margin: 0 3px;
+                border: 0;
+                border-radius: 50%;
+                background-color: #ccc;
+                &.active {
+                    background-color: $primary;
+                }
+            }
+        }
+        &:before,
+        &:after {
+            top: 3px;
+            bottom: 18px;
+            width: 15%;
+            content: "";
+            z-index: 12;
+            position: absolute;
+        }
+        &:before {
+            left: -3%;
+            background: -webkit-linear-gradient(-90deg, transparent, rgba(255, 255, 255, 0.3));
+            background: linear-gradient(-90deg, transparent, rgba(255, 255, 255, 0.3));
+        }
+        &:after {
+            right: -3%;
+            background: -webkit-linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3));
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3));
+        }
+    }
+}
+
 /*------------------------------------
     Element: Pagination
 ------------------------------------*/
@@ -307,7 +395,6 @@
         }
     }
 }
-
 
 /*------------------------------------
     Element: Horizontal Line

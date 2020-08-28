@@ -118,6 +118,7 @@
         padding-top: 60px;
         .product-details {
             position: relative;
+            margin-bottom: 30px;
             .shareit {
                 top: 0;
                 right: 0;
@@ -181,8 +182,21 @@
             }
         }
         .product-gallery {
-            padding-top: 100%;
-            background-color: $gray;
+            .el-carousel-product {
+                .el-carousel-product-item {
+                    overflow: hidden;
+                    position: relative;
+                    padding-top: 100%;
+                    border-radius: $default-br;
+                    .image {
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                    }
+                }
+            }
         }
     }
 }
