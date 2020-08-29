@@ -77,6 +77,21 @@
 }
 
 /*------------------------------------
+    Element: List
+------------------------------------*/
+
+.el-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+        color: $text-color;
+        display: block;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+}
+/*------------------------------------
     Element: Tabs
 ------------------------------------*/
 
@@ -415,6 +430,112 @@
                 padding-right: 15px;
                 p {
                     font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+/*------------------------------------
+    Element: Panel
+------------------------------------*/
+
+.el-panel {
+    text-align: right;
+    box-shadow: $default-bs;
+    border-radius: $default-br;
+    margin-bottom: 30px;
+    .el-panel-body {
+        padding: 30px;
+        position: relative;
+        .el-panel-title {
+            position: relative;
+            margin-bottom: 6px;
+            h1,
+            h2,
+            h3 {
+                z-index: 1;
+                color: $base-1;
+                font-size: 21px;
+                line-height: 1.5;
+                position: relative;
+                display: inline-block;
+                padding-left: 15px;
+                background-color: $base-0;
+            }
+            &:before {
+                top: 11px;
+                left: 0;
+                width: 100%;
+                height: 7px;
+                content: "";
+                position: absolute;
+                background-color: $gray;
+            }
+        }
+        .el-panel-image {
+            overflow: hidden;
+            position: relative;
+            padding-top: 57%;
+            margin-bottom: 25px;
+            img {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: auto;
+                position: absolute;
+            }
+        }
+        .el-panel-line {
+            position: relative;
+            padding: 0 0 18px;
+            margin: 0 0 18px;
+            border-bottom: 1px solid $gray;
+            p {
+                text-align: right;
+                margin: 0;
+            }
+            .label {
+                font-weight: 700;
+            }
+            .title,
+            .subtitle {
+                direction: rtl !important;
+                color: $text-color;
+                font-size: 0.9em;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .section-teacher {
+        .col-lg-4 {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 36%;
+            flex: 0 0 36%;
+            max-width: 36%;
+        }
+        .col-lg-8 {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 64%;
+            flex: 0 0 64%;
+            max-width: 64%;
+        }
+        .reserved {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .el-panel {
+        .el-panel-body {
+            padding: 30px 15px;
+            .el-panel-title {
+                h2 {
+                    font-size: 16px;
                 }
             }
         }
