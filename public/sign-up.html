@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <title>Caffe Ejare</title>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+    ========================================================================
+    Caffe Ejare
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Template Name   : Caffe Ejare
+    Author          : @Kourosh-Neyestani
+    Author URI      : http://afracode.com
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Copyright (c) 2020 - @www.Afracode.com
+    ========================================================================
+    -->
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="assets/css/plugins.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+    <!--Header-->
+    <header class="app-header app-header-1 ${props.class}">
+        <div class="container">
+            <div class="header-wrap">
+                <div class="header-logo">
+                    <a href="">
+                        <span class="logo-text">کافه اجاره</span>
+                    </a>
+                </div>
+                <div class="header-menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <span class="text">برگ نخست</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="search.html">
+                                <span class="text">همه آگهی ها</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="faq.html">
+                                <span class="text">سوالات متداول</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="how-it-works.html">
+                                <span class="text">چطور کار می کند؟</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-links">
+                    <a href="#" class="button button-icon button-icon-md button-line-gray bg-light">
+                        <i class="fa fa-user"></i>
+                    </a>
+                    <a href="#" class="button button-icon button-icon-md button-line-gray bg-light">
+                        <i class="fa fa-search"></i>
+                    </a>
+                    <a href="#" class="button button-md button-primary">
+                        <span class="text">درج آگهی رایگان</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/-->
+<!--Auth-->
+<section class="section section-auth section-auth-1 overlay-image" style="background-image: url(assets/images/backgrounds/1.jpg)">
+    <div class="display-center">
+        <div class="container">
+            <div class="form-panel">
+                <header class="heading center">
+                    <h2>ثبت نام در سایت</h2>
+                    <h3>
+                        <a href="sign-in.html" class="text-secondary">حساب کاربری دارید؟ <b>وارد شوید</b>.</a>
+                    </h3>
+                </header>
+                <form action="" class="form-3">
+                    <div class="form-item">
+                        <label class="form-label">پست الکترونیک</label>
+                        <input type="email" name="email" class="text-left">
+                    </div>
+                    <div class="form-item">
+                        <label class="form-label">رمز ورود به سایت</label>
+                        <input type="password" name="password" class="text-left">
+                    </div>
+                    <div class="form-item form-input-q">
+                        <div class="row">
+                            <div class="col">
+                                <div class="input-checkbox">
+                                    <label class="checkbox-wrap" for="input-remember">
+                                        <span class="checkbox-label">کلیه <a href="page-policy.html" target="_blank" class="text-primary">قوانین و مقررات</a> را میپذیرم.</span>
+                                        <input type="checkbox" name="remember" id="input-remember">
+                                        <span class="checkbox-mark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="form-item">
+                        <button class="button button-md button-block button-secondary" type="submit">
+                            <span class="texr">ثبت نام در سایت</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/-->
+${require('./components/footer/_footer.html')
