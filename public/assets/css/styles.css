@@ -3470,7 +3470,6 @@ Forms
 .el-tabs {
   overflow: hidden;
   position: relative;
-  padding-top: 45px;
 }
 
 .el-tabs .el-tabs-links ul {
@@ -3855,7 +3854,6 @@ Forms
 }
 
 .el-comments > ul > li .el-comments-content p {
-  color: var(--base-1);
   font-size: 12px;
 }
 
@@ -4261,12 +4259,9 @@ testimonial
 /*------------------------------------
     Section: Details
 ------------------------------------*/
-.section-product.section-product-1 {
-  padding-top: 60px;
-}
-
 .section-product.section-product-1 .product-details {
   position: relative;
+  padding-left: 6px;
   margin-bottom: 30px;
 }
 
@@ -4341,6 +4336,10 @@ testimonial
   float: left;
   color: var(--primary);
   text-align: left;
+}
+
+.section-product.section-product-1 .product-gallery {
+  padding-right: 4px;
 }
 
 .section-product.section-product-1 .product-gallery .el-carousel-product .el-carousel-product-item {

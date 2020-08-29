@@ -83,7 +83,6 @@
 .el-tabs {
     overflow: hidden;
     position: relative;
-    padding-top: 45px;
     .el-tabs-links {
         ul {
             list-style: none;
@@ -415,7 +414,6 @@
                 padding-top: 15px;
                 padding-right: 15px;
                 p {
-                    color: $base-1;
                     font-size: 12px;
                 }
             }
