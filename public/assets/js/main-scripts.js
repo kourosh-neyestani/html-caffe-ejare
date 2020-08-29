@@ -3,6 +3,18 @@
 
     var AFRA = {};
 
+    /*====== Preloader ======*/
+    var preloader = $(".preloader");
+    $(window).on("load", function () {
+        var preloaderFadeOutTime = 500;
+
+        function hidePreloader() {
+            preloader.fadeOut(preloaderFadeOutTime);
+        }
+
+        hidePreloader();
+    });
+
     /*====== Sticky Navigation Menu ======*/
     AFRA.StickyHeader = function () {
         var header = $(".app-header");
