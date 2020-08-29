@@ -2455,7 +2455,7 @@ Forms
   display: block;
   position: relative;
   padding-top: 2px;
-  padding-left: 33px;
+  padding-right: 36px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -2483,7 +2483,7 @@ Forms
 
 .form-3 .form-item .input-checkbox .checkbox-wrap .checkbox-mark {
   top: 0;
-  left: 4px;
+  right: 4px;
   width: 21px;
   height: 21px;
   border-radius: 2px;

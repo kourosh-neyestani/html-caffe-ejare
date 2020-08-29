@@ -169,7 +169,7 @@ Forms
                 display: block;
                 position: relative;
                 padding-top: 2px;
-                padding-left: 33px;
+                padding-right: 36px;
                 user-select: none;
                 &:hover input ~ .checkbox-mark {
                     background-color: #ccc;
@@ -188,7 +188,7 @@ Forms
                 }
                 .checkbox-mark {
                     top: 0;
-                    left: 4px;
+                    right: 4px;
                     width: 21px;
                     height: 21px;
                     border-radius: 2px;
