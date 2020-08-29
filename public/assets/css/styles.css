@@ -4358,6 +4358,56 @@ testimonial
 }
 
 /*------------------------------------
+    Section: Auth
+------------------------------------*/
+.section-auth {
+  min-height: 100vh;
+}
+
+.section-auth.section-auth-1 .form-panel {
+  width: 390px;
+  overflow: hidden;
+  position: relative;
+  padding: 30px 30px 15px;
+  margin: auto;
+  -webkit-box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.09);
+          box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.09);
+  border: 1px solid var(--gray);
+  border-radius: 6px;
+  background-color: var(--base-0);
+}
+
+.section-auth.section-auth-1 .form-panel h3 {
+  font-size: 18px;
+}
+
+.section-auth.section-auth-1 .form-panel .logo {
+  text-align: center;
+}
+
+.section-auth.section-auth-1 .form-panel .logo img {
+  margin: 0 auto 15px;
+}
+
+.section-auth.section-auth-1 .form-panel .heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-auth.section-auth-1 .form-panel .heading h2 {
+  font-size: 21px;
+  margin-bottom: 9px;
+}
+
+.section-auth.section-auth-1 .form-panel .heading h3 {
+  font-size: 15px;
+}
+
+.section-auth.section-auth-1 .form-panel .heading h3 a {
+  color: var(--text-color);
+}
+
+/*------------------------------------
     Section: Contact
 ------------------------------------*/
 /*------------------------------------

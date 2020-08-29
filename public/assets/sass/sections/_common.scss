@@ -201,3 +201,48 @@
         }
     }
 }
+
+
+/*------------------------------------
+    Section: Auth
+------------------------------------*/
+
+.section-auth {
+    min-height: 100vh;
+    &.section-auth-1 {
+        .form-panel {
+            width: 390px;
+            overflow: hidden;
+            position: relative;
+            padding: 30px 30px 15px;
+            margin: auto;
+            box-shadow: $default-bs;
+            border: 1px solid $gray;
+            border-radius: $default-br;
+            background-color: $base-0;
+            h3 {
+                font-size: 18px;
+            }
+            .logo {
+                text-align: center;
+                img {
+                    margin: 0 auto 15px;
+                }
+            }
+            .heading {
+                text-align: center;
+                margin-bottom: 45px;
+                h2 {
+                    font-size: 21px;
+                    margin-bottom: 9px;
+                }
+                h3 {
+                    font-size: 15px;
+                    a {
+                        color: $text-color;
+                    }
+                }
+            }
+        }
+    }
+}
