@@ -388,6 +388,125 @@
     }
 }
 
+
+/*------------------------------------
+    Element: Accordion
+------------------------------------*/
+
+$el-accordion-size: 84px;
+
+.el-accordion {
+    width: 992px;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    box-shadow: $default-bs;
+    border-radius: $default-br;
+    background-color: $base-0;
+    transition: all 0.45s;
+    .el-accordion-head {
+        height: $el-accordion-size;
+        color: $text-color;
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        .accordion-image {
+            width: $el-accordion-size;
+            height: $el-accordion-size;
+            img {
+                top: 18px;
+                width: 30px;
+                position: relative;
+            }
+        }
+        .accordion-title {
+            width: 90%;
+            padding: 0 15px;
+            margin: 0 auto;
+            text-align: right;
+            h4 {
+                color: $text-color;
+                font-size: 15px;
+                margin: 0;
+                transition: all 300ms;
+            }
+        }
+        .accordion-arrow {
+            width: $el-accordion-size;
+            height: $el-accordion-size;
+            position: relative;
+            text-align: center;
+            span {
+                font-size: 18px;
+                font-weight: bold;
+                transition: all 450ms;
+            }
+            &.active {
+                span {
+                    color: $primary;
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+    .el-accordion-body {
+        display: none;
+        overflow: hidden;
+        position: relative;
+        padding: 30px 45px;
+        border-top: 1px solid $gray;
+        background-color: #f7f7f7;
+        p {
+            margin: 0;
+        }
+        &.active {
+            display: block;
+        }
+    }
+    &:hover {
+        box-shadow: $default-bs-hover;
+        .el-accordion-head {
+            .accordion-title {
+                h4 {
+                    color: $primary;
+                }
+            }
+        }
+    }
+    &.active {
+        .el-accordion-head {
+            .accordion-title {
+                h4 {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .el-accordion {
+        .el-accordion-head {
+            .accordion-title {
+                h4 {
+                    font-size: 14px;
+                }
+            }
+        }
+        .el-accordion-body {
+            padding: 20px 30px;
+            p {
+                font-size: 12px;
+                text-align: justify;
+            }
+        }
+    }
+}
+
 /*------------------------------------
     Element: Comments
 ------------------------------------*/
