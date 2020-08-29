@@ -882,8 +882,25 @@ $el-accordion-size: 84px;
 }
 
 /*------------------------------------
+Element: Counter
+------------------------------------*/
+
+.el-counter-number {
+    position: relative;
+    .title {
+        top: -15px;
+        color: $primary;
+        font-size: 14px;
+        font-weight: 700;
+        position: relative;
+        margin-right: 9px;
+    }
+}
+
+/*------------------------------------
 Preloader
 ------------------------------------*/
+
 .preloader {
     top: 0;
     left: 0;
