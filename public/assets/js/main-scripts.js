@@ -74,8 +74,15 @@
         });
     };
 
+    /*====== Masonry Layout ======*/
+    AFRA.Masonry = function () {
+        $(function () {
+            $(".masonry").masonry();
+        });
+    };
+
+    /*====== Owl Carousel Setting ======*/
     AFRA.Carousel = function () {
-        /*====== Owl Carousel Setting ======*/
         var owlEvent = function () {
             var i;
             var params = {
@@ -132,6 +139,6 @@
     $(window).on("load", function () {});
 
     $(document).ready(function () {
-        AFRA.StickyHeader(), AFRA.Carousel(), AFRA.DefaultTabs(), AFRA.Accordion();
+        AFRA.StickyHeader(), AFRA.Carousel(), AFRA.DefaultTabs(), AFRA.Accordion(), AFRA.Masonry();
     });
 })($);

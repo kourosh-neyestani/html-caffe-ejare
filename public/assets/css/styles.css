@@ -3382,6 +3382,29 @@ Forms
 /*------------------------------------
     Element: Card
 ------------------------------------*/
+.el-card-post {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.09);
+          box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.09);
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+.el-card-post .details {
+  padding: 20px;
+}
+
+.el-card-post .details p {
+  font-size: 12px;
+}
+
+.el-card-post .details h3 {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
 .el-card-product {
   overflow: hidden;
   position: relative;
