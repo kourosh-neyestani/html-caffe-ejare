@@ -1,12 +1,89 @@
 ${require('../components/header/_header-admin.html') class="glass"}
-    <!--Dashboard-->
-    <section class="section section-dashboard"> 
-        <div class="display-spacing">
-            <div class="container">
+<!--Dashboard-->
+<section class="section section-dashboard">
+    <div class="display-spacing">
+        <div class="container">
+            <div class="row">
                 ${require('./_sidebar.html')}
-                <div class="col-12 col-sm-12 col-md-12 col-lg-8"></div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                    <div class="el-panel el-panel-admin-status">
+                        <div class="el-panel-body">
+                            <div class="el-panel-title">
+                                <h2>وضعیت پروفایل شما</h2>
+                                <p class="text-center pt-15">پروفایل کاربری شما مسدود شده است. لطفا با مدیریت تماس بگیرد.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="el-panel el-panel-stats-card bg-color-2">
+                                <div class="el-panel-body">
+                                    <p class="text-center text-light">تاریخ عضویت</p>
+                                    <p class="price">
+                                        <span class="value text-light">۱۱</span>
+                                        <span class="currency text-light">مرداد ۱۳۹۹</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="el-panel el-panel-stats-card bg-instagram">
+                                <div class="el-panel-body">
+                                    <p class="text-center text-light">میانگین امتیازات</p>
+                                    <p class="price">
+                                        <span class="value text-light">۴.5</span>
+                                        <span class="currency text-light">ستاره</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="el-panel el-panel-stats-card bg-color-1">
+                                <div class="el-panel-body">
+                                    <p class="text-center text-light">تعداد آگهی های رایگان من</p>
+                                    <p class="price">
+                                        <span class="value text-light">۱۵۰</span>
+                                        <span class="currency text-light">آگهی</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="el-panel el-panel-stats-card bg-linkedin">
+                                <div class="el-panel-body">
+                                    <p class="text-center text-light">تعداد آگهی های ویژه من</p>
+                                    <p class="price">
+                                        <span class="value text-light">۳۳</span>
+                                        <span class="currency text-light">آگهی</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="el-panel el-panel-stats-card" style="background-color: orangered;">
+                                <div class="el-panel-body">
+                                    <p class="text-center text-light">وضعیت پروفایل</p>
+                                    <p class="price">
+                                        <span class="currency text-light">غیر فعال</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="el-panel el-panel-stats-card" style="background-color:indianred;">
+                                <div class="el-panel-body">
+                                    <p class="text-center text-light">شماره تماس مدیریت</p>
+                                    <p class="price">
+                                        <span class="value text-light">09196965764</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-    <!--/-->
+    </div>
+</section>
+<!--/-->
 ${require('../components/footer/_footer-admin.html')}

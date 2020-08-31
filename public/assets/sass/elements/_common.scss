@@ -719,6 +719,15 @@ $el-accordion-size: 84px;
     }
 }
 
+.el-panel-stats-card {
+    p {
+        text-align: center;
+        &.price {
+            font-size: 36px;
+        }
+    }
+}
+
 @media (min-width: 992px) and (max-width: 1200px) {
     .section-teacher {
         .col-lg-4 {

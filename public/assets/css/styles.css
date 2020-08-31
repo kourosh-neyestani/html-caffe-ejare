@@ -4202,6 +4202,14 @@ Forms
   font-size: 16px;
 }
 
+.el-panel-stats-card p {
+  text-align: center;
+}
+
+.el-panel-stats-card p.price {
+  font-size: 36px;
+}
+
 @media (min-width: 992px) and (max-width: 1200px) {
   .section-teacher .col-lg-4 {
     -webkit-box-flex: 0;
