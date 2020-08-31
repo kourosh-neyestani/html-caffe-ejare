@@ -1,3 +1,30 @@
 /*------------------------------------
     Section: Posts/Blog
 ------------------------------------*/
+
+.section-blog-single-post {
+    &.section-blog-single-post-1 {
+        .single-post {
+            .image {
+                overflow: hidden;
+                position: relative;
+                padding-top: 51%;
+                margin-bottom: 0;
+                background-color: $gray;
+                img {
+                    top: 0;
+                    left: 0; 
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                }
+            }
+            .details {
+                h1 {
+                    font-size: 24px;
+                    line-height: 1.6;
+                }
+            }
+        }
+    }
+}
