@@ -446,7 +446,6 @@
     }
 }
 
-
 /*------------------------------------
     Element: Accordion
 ------------------------------------*/
@@ -618,6 +617,8 @@ $el-accordion-size: 84px;
 ------------------------------------*/
 
 .el-panel {
+    overflow: hidden;
+    position: relative;
     text-align: right;
     box-shadow: $default-bs;
     border-radius: $default-br;
@@ -948,6 +949,85 @@ Element: Counter
         font-weight: 700;
         position: relative;
         margin-right: 9px;
+    }
+}
+
+/*------------------------------------
+Element: Tags & Category
+------------------------------------*/
+
+.el-categories {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+        a {
+            color: $text-color;
+            display: inline-block;
+            font-size: 12px;
+            padding: 6px 9px;
+            border-radius: 3px;
+            margin-bottom: 9px;
+            background-color: $gray;
+            -webkit-transition: all 300ms;
+            transition: all 300ms;
+            i {
+                top: 1px;
+                position: relative;
+                margin-left: 3px;
+            }
+        }
+        &:hover {
+            a {
+                color: $base-0;
+                background-color: $primary;
+            }
+        }
+    }
+}
+
+/*------------------------------------
+Element: Widgets
+------------------------------------*/
+
+.el-widget {
+    &.el-widget-posts {
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li {
+                display: block;
+                &:not(:last-child) {
+                    padding-bottom: 12px;
+                    margin-bottom: 12px;
+                    border-bottom: 1px solid $gray;
+                }
+                .image {
+                    overflow: hidden;
+                    position: relative;
+                    padding-top: 75%;
+                }
+                .details {
+                    h4 {
+                        color: $text-color;
+                        display: block;
+                        font-size: 12px;
+                        font-weight: 600;
+                        line-height: 1.8;
+                        text-align: justify;
+                        padding-top: 9px;
+                        margin-bottom: 0;
+                        &:hover {
+                            color: $primary;
+                        }
+                    }
+                    .date {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
     }
 }
 
