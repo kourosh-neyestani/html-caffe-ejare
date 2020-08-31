@@ -251,4 +251,72 @@
 ------------------------------------*/
 
 .section-dashboard {
+    .el-avatar {
+        top: 12px;
+        right: 0;
+        width: 102px;
+        height: 102px;
+        position: relative;
+        border-radius: 50%;
+        background-color: $gray;
+        .avatar-upload {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            .avatar-edit {
+                top: -3px;
+                right: -3px;
+                z-index: 1;
+                position: absolute;
+                input {
+                    display: none;
+                    + label {
+                        width: 34px;
+                        height: 34px;
+                        cursor: pointer;
+                        display: inline-block;
+                        font-weight: normal;
+                        margin-bottom: 0;
+                        border-radius: 100%;
+                        border: 1px solid #eee;
+                        background: $base-0;
+                        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+                        transition: all 0.2s ease-in-out;
+                        &:hover {
+                            border-color: $primary;
+                            &:after {
+                                color: $base-1;
+                            }
+                        }
+                        &:after {
+                            top: 10px;
+                            left: 0;
+                            right: 0;
+                            color: $text-color;
+                            content: "\f040";
+                            text-align: center;
+                            font-family: "FontAwesome";
+                            position: absolute;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+            .avatar-preview {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                border-radius: 100%;
+                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+                > div {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 100%;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+        }
+    }
 }
