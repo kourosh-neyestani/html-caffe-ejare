@@ -743,6 +743,7 @@ $el-accordion-size: 84px;
         user-select: none;
         display: inline-block;
         border-radius: 50%;
+        border: 1px solid transparent;
         a {
             display: block;
         }
@@ -756,8 +757,9 @@ $el-accordion-size: 84px;
             color: $base-1;
         }
         &.active {
-            color: $base-1;
-            background-color: $gray;
+            color: $secondary;
+            border-color: $gray;
+            box-shadow: $default-bs;
         }
     }
 }
