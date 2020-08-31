@@ -756,8 +756,8 @@ $el-accordion-size: 84px;
             color: $base-1;
         }
         &.active {
-            color: $base-0;
-            background-color: $primary;
+            color: $base-1;
+            background-color: $gray;
         }
     }
 }

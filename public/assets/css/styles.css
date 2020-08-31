@@ -4205,8 +4205,8 @@ Forms
 }
 
 .el-pagination li.active {
-  color: var(--base-0);
-  background-color: var(--primary);
+  color: var(--base-1);
+  background-color: var(--gray);
 }
 
 /*------------------------------------
