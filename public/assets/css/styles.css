@@ -3896,6 +3896,10 @@ Forms
   max-width: 100%;
   overflow: hidden;
   position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
