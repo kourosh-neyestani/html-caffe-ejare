@@ -634,15 +634,7 @@ $el-accordion-size: 84px;
         .el-panel-image {
             overflow: hidden;
             position: relative;
-            padding-top: 57%;
             margin-bottom: 25px;
-            img {
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: auto;
-                position: absolute;
-            }
         }
         .el-panel-line {
             position: relative;

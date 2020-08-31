@@ -4075,16 +4075,7 @@ Forms
 .el-panel .el-panel-body .el-panel-image {
   overflow: hidden;
   position: relative;
-  padding-top: 57%;
   margin-bottom: 25px;
-}
-
-.el-panel .el-panel-body .el-panel-image img {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  position: absolute;
 }
 
 .el-panel .el-panel-body .el-panel-line {
