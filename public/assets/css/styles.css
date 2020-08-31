@@ -4153,31 +4153,31 @@ Forms
 }
 
 /*------------------------------------
+    Element: Navigation
+------------------------------------*/
+.el-navigation {
+  padding-top: 30px;
+  text-align: center;
+}
+
+/*------------------------------------
     Element: Pagination
 ------------------------------------*/
 .el-pagination {
-  text-align: center;
-  white-space: nowrap;
-  padding-top: 75px;
-  display: none !important;
-}
-
-.el-pagination ul {
+  padding: 0;
+  display: inline-block;
   direction: ltr;
   list-style: none;
-  display: inline-block;
-  padding: 12px;
-  margin: 0;
-  border-radius: 36px;
-  border: 1px solid var(--gray);
-  background-color: var(--black);
+  text-align: left;
+  white-space: nowrap;
+  margin: 0 auto;
 }
 
-.el-pagination ul li {
+.el-pagination li {
   height: 33px;
   min-width: 33px;
   line-height: 33px;
-  color: var(--base-0);
+  color: #999;
   cursor: pointer;
   font-size: 0.9em;
   text-align: center;
@@ -4189,22 +4189,22 @@ Forms
   border-radius: 50%;
 }
 
-.el-pagination ul li a {
+.el-pagination li a {
   display: block;
 }
 
-.el-pagination ul li .fa {
+.el-pagination li .fa {
   top: 1px;
-  padding-left: 12px;
+  padding-left: 6px;
   position: relative;
   display: inline-block;
 }
 
-.el-pagination ul li:hover {
+.el-pagination li:hover {
   color: var(--base-1);
 }
 
-.el-pagination ul li.active {
+.el-pagination li.active {
   color: var(--base-0);
   background-color: var(--primary);
 }
