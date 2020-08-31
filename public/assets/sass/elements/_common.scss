@@ -149,6 +149,33 @@
     }
 }
 
+.el-list-icon {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+        color: var(--text-color);
+        display: block;
+        font-size: 15px;
+        font-weight: 500;
+        a {
+            display: block;
+            i {
+                top: 4px;
+                font-size: 18px;
+                position: relative;
+                margin-left: 9px;
+            }
+        }
+        &.active {
+            color: $primary;
+        }
+        &:not(:last-child) {
+            margin-bottom: 18px;
+        }
+    }
+}
+
 /*------------------------------------
     Element: Tabs
 ------------------------------------*/
@@ -636,6 +663,7 @@ $el-accordion-size: 84px;
                 z-index: 1;
                 color: $base-1;
                 font-size: 21px;
+                font-weight: 400;
                 line-height: 1.5;
                 position: relative;
                 display: inline-block;
@@ -676,6 +704,18 @@ $el-accordion-size: 84px;
                 font-size: 0.9em;
             }
         }
+    }
+}
+
+.el-panel-advert {
+    background-color: $primary;
+    p {
+        color: #ccc;
+        margin-bottom: 20px;
+    }
+    h3 {
+        color: $base-0;
+        font-size: 16px;
     }
 }
 

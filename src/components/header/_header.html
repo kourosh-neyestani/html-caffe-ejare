@@ -3,35 +3,7 @@ ${require('./_html.html') base=""}
     <header class="app-header app-header-1 ${props.class}">
         <div class="container">
             <div class="header-wrap">
-                <div class="header-logo">
-                    <a href="">
-                        <span class="logo-text">کافه اجاره</span>
-                    </a>
-                </div>
-                <div class="header-menu">
-                    <ul>
-                        <li>
-                            <a href="index.html">
-                                <span class="text">برگ نخست</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="search.html">
-                                <span class="text">همه آگهی ها</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="page-faq.html">
-                                <span class="text">سوالات متداول</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="page-how-it-works.html">
-                                <span class="text">چطور کار می کند؟</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                ${require('./_menu.html')}
                 <div class="header-links">
                     <a href="sign-in.html" class="button button-icon button-icon-md button-line-gray bg-light">
                         <i class="fa fa-user"></i>
