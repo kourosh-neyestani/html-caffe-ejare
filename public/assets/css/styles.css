@@ -3480,6 +3480,44 @@ Forms
   margin-bottom: 10px;
 }
 
+.el-list-nums ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.el-list-nums ul li {
+  display: block;
+  position: relative;
+  padding-right: 45px;
+}
+
+.el-list-nums ul li:not(:last-child) {
+  margin-bottom: 20px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--gray);
+}
+
+.el-list-nums ul li .count {
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  color: var(--base-0);
+  line-height: 30px;
+  text-align: center;
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--primary);
+}
+
+.el-list-nums ul li .body .title {
+  top: 1px;
+  color: var(--primary);
+  font-weight: 700;
+  position: relative;
+}
+
 /*------------------------------------
     Element: Tabs
 ------------------------------------*/
