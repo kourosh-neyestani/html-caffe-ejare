@@ -1671,6 +1671,22 @@ h6,
   position: relative;
 }
 
+.overlay-pattern .bg-pattern {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.overlay-pattern .bg-pattern-1 {
+  background: rgba(0, 0, 0, 0.3) repeat url("../images/shapes/pattern-1.png") center center/3px;
+}
+
+.overlay-pattern .bg-pattern-2 {
+  background: repeat url("../images/shapes/pattern-1.png") center center/9px;
+}
+
 .bg-google {
   background-color: #B23121 !important;
 }
@@ -1978,7 +1994,7 @@ h6,
 
 .overlay-color .bg-dark {
   z-index: 1;
-  opacity: .6 !important;
+  opacity: 0.6 !important;
   background-color: var(--primary-3);
 }
 
@@ -4870,6 +4886,7 @@ Preloader
 .section-hero.section-hero-1 {
   height: 108vh;
   background-color: #151515;
+  background-attachment: fixed;
 }
 
 .section-hero.section-hero-1 .content {
@@ -4881,6 +4898,7 @@ Preloader
 .section-hero.section-hero-1 .content p {
   color: #ccc;
   font-size: 18px;
+  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -4889,6 +4907,7 @@ Preloader
   font-size: 360%;
   font-weight: 700;
   font-family: "iranyekan", sans-serif;
+  text-shadow: 2px 2px 2px var(--base-1);
   line-height: 1.6;
 }
 
@@ -4901,6 +4920,13 @@ Preloader
   right: 0;
   bottom: 15px;
   position: absolute;
+}
+
+.section-hero.section-hero-1 .bg-animation-1,
+.section-hero.section-hero-1 .bg-animation-2,
+.section-hero.section-hero-1 .app-header:before,
+.section-hero.section-hero-1 .el-cta:after {
+  opacity: .2;
 }
 
 /*------------------------------------
