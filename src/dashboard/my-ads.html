@@ -1,0 +1,42 @@
+${require('../components/header/_header-admin.html') class="glass"}
+<!--Dashboard-->
+<section class="section section-dashboard">
+    <div class="display-spacing">
+        <div class="container">
+            <div class="row">
+                ${require('./_sidebar.html')}
+                <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                    <div class="el-panel el-panel-admin-status">
+                        <div class="el-panel-body">
+                            <div class="el-panel-title">
+                                <h2>ویرایش پنل مدیریت</h2>
+                            </div>
+                            <div class="el-table">
+                                <table id="table_id" class="display">
+                                    <thead>
+                                        <tr>
+                                            <th>Column 1</th>
+                                            <th>Column 2</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Row 1 Data 1</td>
+                                            <td>Row 1 Data 2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Row 2 Data 1</td>
+                                            <td>Row 2 Data 2</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/-->
+${require('../components/footer/_footer-admin.html')}
