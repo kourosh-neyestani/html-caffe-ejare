@@ -5,11 +5,14 @@
 .section-features {
     &.section-features-1 {
         .item {
-            position: relative;
-            padding-top: 222px;
-            border-radius: 6px;
-            margin-bottom: 12px;
-            background-color: $primary;
+            height: 100%;
+            .image {
+                height: 100%;
+                overflow: hidden;
+                position: relative;
+                border-radius: $default-br;
+                background-color: $gray;
+            }
         }
     }
 }

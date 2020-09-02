@@ -1346,6 +1346,7 @@ h6,
 .row-xs > * {
   padding-left: 6px !important;
   padding-right: 6px !important;
+  margin-bottom: 12px !important;
 }
 
 .row-sm {
@@ -1356,6 +1357,7 @@ h6,
 .row-sm > * {
   padding-left: 12px !important;
   padding-right: 12px !important;
+  margin-bottom: 24px !important;
 }
 
 .row-md {
@@ -1366,6 +1368,7 @@ h6,
 .row-md > * {
   padding-left: 15px !important;
   padding-right: 15px !important;
+  margin-bottom: 15px !important;
 }
 
 /*------------------------------------
@@ -3981,6 +3984,17 @@ Forms
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3));
 }
 
+@media (max-width: 992px) {
+  .el-slider-items .owl-carousel .owl-nav .owl-prev.owl-prev,
+  .el-slider-items .owl-carousel .owl-nav .owl-next.owl-prev {
+    right: 0px !important;
+  }
+  .el-slider-items .owl-carousel .owl-nav .owl-prev.owl-next,
+  .el-slider-items .owl-carousel .owl-nav .owl-next.owl-next {
+    left: 0px !important;
+  }
+}
+
 /*------------------------------------
     Element: Accordion
 ------------------------------------*/
@@ -5643,11 +5657,15 @@ testimonial
     Section: Features
 ------------------------------------*/
 .section-features.section-features-1 .item {
+  height: 100%;
+}
+
+.section-features.section-features-1 .item .image {
+  height: 100%;
+  overflow: hidden;
   position: relative;
-  padding-top: 222px;
   border-radius: 6px;
-  margin-bottom: 12px;
-  background-color: var(--primary);
+  background-color: var(--gray);
 }
 
 /*------------------------------------
