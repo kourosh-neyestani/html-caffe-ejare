@@ -238,111 +238,44 @@
     Element: Table
 ------------------------------------*/
 
+/*------------------------------------
+    Element: Table
+------------------------------------*/
+
 .el-table {
-    color: #666;
-    direction: rtl;
-    th {
-        color: $base-1;
-    }
-    td {
-        font-size: 12px;
-    }
-    table.dataTable {
-        margin-bottom: 15px;
-    }
-    .dataTables_wrapper {
-        direction: rtl !important;
-        .dataTables_info {
-            color: $base-1;
-            padding: 9px 24px;
-            border-radius: 24px;
-            background-color: $gray;
-        }
-        .dataTables_length {
-            color: $base-1;
-            padding: 9px 24px;
-            border-radius: 24px;
-            background-color: $gray;
-            select {
-                color: $primary;
-                option {
-                    width: 100%;
-                    display: block;
-                    color: $base-1;
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    margin: 0;
+    tbody {
+        width: 100%;
+        display: block;
+        margin: 0;
+        tr {
+            width: 100%;
+            height: 45px;
+            display: block;
+            font-size: 12px;
+            margin-bottom: 6px;
+            td {
+                color: #333;
+                display: inline-block;
+                overflow: hidden;
+                line-height: 45px;
+                white-space: nowrap;
+                &.specname {
+                    width: 20%;
+                    padding: 0 15px;
+                    margin-left: 1%;
+                }
+                &.specvalue {
+                    width: 78%;
+                    padding: 0 15px;
                 }
             }
-        }
-        .dataTables_filter {
-            width: 50%;
-            display: block;
-            color: $base-1;
-            font-weight: 700;
-            padding: 9px 15px;
-            position: relative;
-            border-radius: 24px;
-            margin-bottom: 15px;
-            input {
-                top: 0;
-                right: -15px;
-                height: 36px;
-                padding-right: 66px;
-                margin-right: 15px;
-                position: absolute;
-                border-radius: 24px;
-                border: 1px solid #999;
-            }
-        }
-    }
-    .date {
-        direction: ltr;
-    }
-    .name {
-        font-weight: 700;
-    }
-    .status {
-        top: 6px;
-        position: relative;
-    }
-    .teacher {
-        font-weight: 700;
-        img {
-            width: 33px;
-            height: 33px;
-            margin-left: 6px;
-            border-radius: 50%;
-        }
-    }
-    .btn {
-        display: block;
-        font-size: 12px;
-        white-space: nowrap;
-        i {
-            top: 1px;
-            width: 12px;
-            font-size: 10px;
-            position: relative;
-            display: inline-block;
-            margin-left: 3px;
-            &.fa-times {
-                right: 1px;
-            }
-        }
-    }
-}
-@media (max-width: 768px) {
-    .el-table {
-        .custom-hide {
-            display: none;
-        }
-    }
-}
-@media (max-width: 640px) {
-    .el-table {
-        .dataTables_wrapper {
-            .dataTables_filter {
-                width: 100%;
-                input {
-                    width: 100%;
+            &:nth-child(odd) {
+                td {
+                    background: #f7f7f7;
                 }
             }
         }

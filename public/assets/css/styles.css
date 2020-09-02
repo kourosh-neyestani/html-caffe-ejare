@@ -3663,129 +3663,51 @@ Forms
 /*------------------------------------
     Element: Table
 ------------------------------------*/
+/*------------------------------------
+    Element: Table
+------------------------------------*/
 .el-table {
-  color: #666;
-  direction: rtl;
-}
-
-.el-table th {
-  color: var(--base-1);
-}
-
-.el-table td {
-  font-size: 12px;
-}
-
-.el-table table.dataTable {
-  margin-bottom: 15px;
-}
-
-.el-table .dataTables_wrapper {
-  direction: rtl !important;
-}
-
-.el-table .dataTables_wrapper .dataTables_info {
-  color: var(--base-1);
-  padding: 9px 24px;
-  border-radius: 24px;
-  background-color: var(--gray);
-}
-
-.el-table .dataTables_wrapper .dataTables_length {
-  color: var(--base-1);
-  padding: 9px 24px;
-  border-radius: 24px;
-  background-color: var(--gray);
-}
-
-.el-table .dataTables_wrapper .dataTables_length select {
-  color: var(--primary);
-}
-
-.el-table .dataTables_wrapper .dataTables_length select option {
   width: 100%;
   display: block;
-  color: var(--base-1);
+  font-size: 14px;
+  margin: 0;
 }
 
-.el-table .dataTables_wrapper .dataTables_filter {
-  width: 50%;
+.el-table tbody {
+  width: 100%;
   display: block;
-  color: var(--base-1);
-  font-weight: 700;
-  padding: 9px 15px;
-  position: relative;
-  border-radius: 24px;
-  margin-bottom: 15px;
+  margin: 0;
 }
 
-.el-table .dataTables_wrapper .dataTables_filter input {
-  top: 0;
-  right: -15px;
-  height: 36px;
-  padding-right: 66px;
-  margin-right: 15px;
-  position: absolute;
-  border-radius: 24px;
-  border: 1px solid #999;
-}
-
-.el-table .date {
-  direction: ltr;
-}
-
-.el-table .name {
-  font-weight: 700;
-}
-
-.el-table .status {
-  top: 6px;
-  position: relative;
-}
-
-.el-table .teacher {
-  font-weight: 700;
-}
-
-.el-table .teacher img {
-  width: 33px;
-  height: 33px;
-  margin-left: 6px;
-  border-radius: 50%;
-}
-
-.el-table .btn {
+.el-table tbody tr {
+  width: 100%;
+  height: 45px;
   display: block;
   font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.el-table tbody tr td {
+  color: #333;
+  display: inline-block;
+  overflow: hidden;
+  line-height: 45px;
   white-space: nowrap;
 }
 
-.el-table .btn i {
-  top: 1px;
-  width: 12px;
-  font-size: 10px;
-  position: relative;
-  display: inline-block;
-  margin-left: 3px;
+.el-table tbody tr td.specname {
+  width: 20%;
+  padding: 0 15px;
+  margin-left: 1%;
 }
 
-.el-table .btn i.fa-times {
-  right: 1px;
+.el-table tbody tr td.specvalue {
+  width: 78%;
+  padding: 0 15px;
 }
 
-@media (max-width: 768px) {
-  .el-table .custom-hide {
-    display: none;
-  }
-}
-
-@media (max-width: 640px) {
-  .el-table .dataTables_wrapper .dataTables_filter {
-    width: 100%;
-  }
-  .el-table .dataTables_wrapper .dataTables_filter input {
-    width: 100%;
-  }
+.el-table tbody tr:nth-child(odd) td {
+  background: #f7f7f7;
 }
 
 /*------------------------------------
