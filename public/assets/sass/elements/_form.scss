@@ -46,7 +46,6 @@ Forms
     .form-item {
         min-height: 45px;
         position: relative;
-        margin-bottom: 30px;
         border-bottom: 1px solid #eee;
         .input-label {
             top: 12px;
@@ -83,7 +82,7 @@ Forms
             border-radius: 25px;
             background-color: #ccc;
             transition: all 0.4s;
-        }
+        }   
         input {
             display: none;
             &:checked + div {
@@ -108,7 +107,6 @@ Forms
     .form-item {
         position: relative;
         padding-top: 10px;
-        margin-bottom: 15px;
         select,
         textarea,
         .input-select,
@@ -289,8 +287,6 @@ Forms
     font-weight: bold;
     .form-item {
         position: relative;
-        padding-top: 10px;
-        margin-bottom: 15px;
         input {
             @include placeholder() {
                 color: $text-color;
@@ -480,9 +476,6 @@ Forms
             display: inline-block;
             position: absolute;
             background-color: $base-0;
-        }
-        .wrap-button {
-            padding-top: 25px !important;
         }
     }
     .form-input-divider {

@@ -1250,8 +1250,88 @@ h6,
 /*------------------------------------
     Spacing
 ------------------------------------*/
+.mt-spacing {
+  margin-top: 100px;
+}
+
+.mb-spacing {
+  margin-bottom: 100px;
+}
+
+.row-xs {
+  margin-left: -6px;
+  margin-right: -6px;
+  margin-bottom: -12px;
+}
+
+.row-xs > * {
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-bottom: 12px;
+}
+
+.row-sm {
+  margin-left: -12px;
+  margin-right: -12px;
+  margin-bottom: -24px;
+}
+
+.row-sm > * {
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-bottom: 24px;
+}
+
+.row-md {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: -30px;
+}
+
+.row-md > * {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 30px;
+}
+
+.row-0 {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: 1200px) {
+  .row-xl-5 > * {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .row-lg-5 > * {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
 .mb-0 {
   margin-bottom: 0;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
 }
 
 .mt-15 {
@@ -1272,6 +1352,10 @@ h6,
 
 .mb--10 {
   margin-bottom: -10px;
+}
+
+.mb--12 {
+  margin-bottom: -12px;
 }
 
 .mb--15 {
@@ -1328,47 +1412,6 @@ h6,
 
 .pr-45 {
   padding-right: 45px !important;
-}
-
-.mt-spacing {
-  margin-top: 100px;
-}
-
-.mb-spacing {
-  margin-bottom: 100px;
-}
-
-.row-xs {
-  margin-left: -6px !important;
-  margin-right: -6px !important;
-}
-
-.row-xs > * {
-  padding-left: 6px !important;
-  padding-right: 6px !important;
-  margin-bottom: 12px !important;
-}
-
-.row-sm {
-  margin-left: -12px !important;
-  margin-right: -11px !important;
-}
-
-.row-sm > * {
-  padding-left: 12px !important;
-  padding-right: 12px !important;
-  margin-bottom: 24px !important;
-}
-
-.row-md {
-  margin-left: -15px !important;
-  margin-right: -15px !important;
-}
-
-.row-md > * {
-  padding-left: 15px !important;
-  padding-right: 15px !important;
-  margin-bottom: 15px !important;
 }
 
 /*------------------------------------
@@ -1981,29 +2024,6 @@ h6,
           animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
 }
 
-.row-0 {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-@media (min-width: 1200px) {
-  .row-xl-5 > * {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 20%;
-    flex: 0 0 20%;
-    max-width: 20%;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-  .row-lg-5 > * {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 20%;
-    flex: 0 0 20%;
-    max-width: 20%;
-  }
-}
-
 .overlay-color .bg-dark {
   z-index: 1;
   opacity: 0.6 !important;
@@ -2259,52 +2279,6 @@ h6,
 /*------------------------------------
     Container
 ------------------------------------*/
-.row-0 {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-
-.row-0 > * {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-.row-xs {
-  margin-left: -6px !important;
-  margin-right: -6px !important;
-}
-
-.row-xs > * {
-  padding-left: 6px !important;
-  padding-right: 6px !important;
-}
-
-.row-sm {
-  margin-left: -9px !important;
-  margin-right: -9px !important;
-}
-
-.row-sm > * {
-  padding-left: 9px !important;
-  padding-right: 9px !important;
-}
-
-.row-md {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-
-.row-md > * {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.row-center {
-  -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important;
-}
-
 /*------------------------------------
     Elements Styles
 ------------------------------------*/
@@ -2358,7 +2332,6 @@ Forms
 .form-2 .form-item {
   min-height: 45px;
   position: relative;
-  margin-bottom: 30px;
   border-bottom: 1px solid #eee;
 }
 
@@ -2426,7 +2399,6 @@ Forms
 .form-3 .form-item {
   position: relative;
   padding-top: 10px;
-  margin-bottom: 15px;
 }
 
 .form-3 .form-item select,
@@ -2644,8 +2616,6 @@ Forms
 
 .form-4 .form-item {
   position: relative;
-  padding-top: 10px;
-  margin-bottom: 15px;
 }
 
 .form-4 .form-item input::-webkit-input-placeholder {
@@ -2890,10 +2860,6 @@ Forms
   display: inline-block;
   position: absolute;
   background-color: var(--base-0);
-}
-
-.form-4 .form-item .wrap-button {
-  padding-top: 25px !important;
 }
 
 .form-4 .form-input-divider {
@@ -3427,7 +3393,6 @@ Forms
 .el-card-post {
   overflow: hidden;
   position: relative;
-  margin-bottom: 30px;
   -webkit-box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.09);
           box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.09);
   border-radius: 6px;
@@ -3450,7 +3415,6 @@ Forms
 .el-card-product {
   overflow: hidden;
   position: relative;
-  margin-bottom: 18px;
   -webkit-box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.09);
           box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.09);
   border-radius: 6px;
@@ -4488,7 +4452,7 @@ Forms
     Element: Search Box
 ------------------------------------*/
 .el-search-box {
-  padding: 15px 30px;
+  padding: 30px;
   -webkit-box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.09);
           box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.09);
   border-radius: 6px;
@@ -4590,8 +4554,8 @@ Forms
   height: 1px;
   display: block;
   position: relative;
-  margin-top: 20px;
-  margin-bottom: 24px;
+  margin-top: 10px;
+  margin-bottom: 25px;
   background-color: var(--gray);
 }
 
@@ -5570,7 +5534,7 @@ testimonial
     Section: Dashboard
 ------------------------------------*/
 .section-dashboard .el-avatar {
-  top: 12px;
+  top: 18px;
   right: 0;
   width: 102px;
   height: 102px;
