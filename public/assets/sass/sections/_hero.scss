@@ -19,7 +19,7 @@
             }
             h1 {
                 color: $base-0;
-                font-size: 360%;
+                font-size: 51px;
                 font-weight: 700;
                 font-family: $font-family-1;
                 text-shadow: 2px 2px 2px $base-1;
@@ -37,7 +37,40 @@
         }
         .bg-animation-1,
         .bg-animation-2 {
-            opacity: .2;
+            opacity: 0.2;
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .section-hero {
+        &.section-hero-1 {
+            .content {
+                p {
+                    font-size: 16px;
+                }
+                h1 {
+                    font-size: 42px;
+                }
+            }
+            .footer {
+                height: 90px;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .section-hero {
+        &.section-hero-1 {
+            .content {
+                p {
+                    font-size: 14px;
+                }
+                h1 {
+                    font-size: 33px;
+                }
+            }
         }
     }
 }
