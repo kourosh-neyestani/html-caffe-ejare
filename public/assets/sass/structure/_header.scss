@@ -86,3 +86,20 @@ $header-height: 80px;
     }
 }
 
+@media (max-width: 992px) {
+    .app-header {
+        .header-wrap {
+            height: 60px;
+            .header-logo,
+            .header-menu,
+            .button-icon {
+                display: none !important;
+            }
+            .button-md {
+                height: inherit;
+                font-size: 12px;
+                padding: 9px 15px;
+            }
+        }
+    }
+}

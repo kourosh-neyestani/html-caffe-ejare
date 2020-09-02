@@ -2147,6 +2147,22 @@ h6,
   background-color: #fff;
 }
 
+@media (max-width: 992px) {
+  .app-header .header-wrap {
+    height: 60px;
+  }
+  .app-header .header-wrap .header-logo,
+  .app-header .header-wrap .header-menu,
+  .app-header .header-wrap .button-icon {
+    display: none !important;
+  }
+  .app-header .header-wrap .button-md {
+    height: inherit;
+    font-size: 12px;
+    padding: 9px 15px;
+  }
+}
+
 /*------------------------------------
     Footer
 ------------------------------------*/
