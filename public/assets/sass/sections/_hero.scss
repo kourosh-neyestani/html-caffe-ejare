@@ -74,3 +74,18 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .section-hero {
+        &.section-hero-1 {
+            .content {
+                p {
+                    font-size: 10px;
+                }
+                h1 {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
