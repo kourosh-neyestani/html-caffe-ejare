@@ -1315,6 +1315,19 @@ Element: List of products
 }
 
 /*------------------------------------
+Element: Uploader
+------------------------------------*/
+
+.el-uploader {
+    height: 90px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: $default-bs;
+    border-radius: $default-br;
+    background-color: $gray;
+}
+
+/*------------------------------------
 Preloader
 ------------------------------------*/
 
