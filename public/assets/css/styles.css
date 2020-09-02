@@ -3528,10 +3528,10 @@ Forms
 
 @media (max-width: 992px) {
   .el-heading.el-heading-3 h2 {
-    font-size: 18px;
+    font-size: 27px;
   }
   .el-heading.el-heading-3 h3 {
-    font-size: 16px;
+    font-size: 21px;
   }
   .el-heading.el-heading-3 .button {
     top: inherit;
@@ -3541,6 +3541,15 @@ Forms
     height: inherit;
     font-size: 12px;
     padding: 9px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .el-heading.el-heading-3 h2 {
+    font-size: 18px;
+  }
+  .el-heading.el-heading-3 h3 {
+    font-size: 16px;
   }
 }
 
