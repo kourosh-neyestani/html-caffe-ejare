@@ -3393,6 +3393,7 @@ Forms
 .el-card-post {
   overflow: hidden;
   position: relative;
+  margin-bottom: 30px;
   -webkit-box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.09);
           box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.09);
   border-radius: 6px;
