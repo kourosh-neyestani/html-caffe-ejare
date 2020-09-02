@@ -5156,10 +5156,6 @@ Element: Uploader
   }
 }
 
-.check-user-device {
-  display: none;
-}
-
 /*------------------------------------
     Sections Styles
 ------------------------------------*/
@@ -5392,6 +5388,7 @@ testimonial
   top: 0;
   right: 0;
   width: 45px;
+  z-index: 12;
   position: absolute;
 }
 
@@ -5410,6 +5407,10 @@ testimonial
   text-align: center;
   border-radius: 6px;
   margin-bottom: 6px;
+}
+
+.section-product.section-product-1 .product-details .shareit ul li a {
+  display: block;
 }
 
 .section-product.section-product-1 .product-details .details {

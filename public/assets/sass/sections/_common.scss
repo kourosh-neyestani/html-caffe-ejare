@@ -123,6 +123,7 @@
                 top: 0;
                 right: 0;
                 width: 45px;
+                z-index: 12;
                 position: absolute;
                 ul {
                     list-style: none;
@@ -137,6 +138,9 @@
                         text-align: center;
                         border-radius: 6px;
                         margin-bottom: 6px;
+                        a {
+                            display: block;
+                        }
                     }
                 }
             }
