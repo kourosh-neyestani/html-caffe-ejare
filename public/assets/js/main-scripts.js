@@ -233,13 +233,13 @@
 
         $(".el-select2-category").select2({
             dir: "rtl",
-            placeholder: "مهارت مورد نیاز",
+            placeholder: "جستجو در همه گروه ها",
             templateResult: formatDefault,
         });
 
         $(".el-select2-city").select2({
             dir: "rtl",
-            placeholder: "مهارت مورد نیاز",
+            placeholder: "جستجو در همه شهر ها",
             templateResult: formatDefault,
         });
 
