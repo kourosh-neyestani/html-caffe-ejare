@@ -267,6 +267,7 @@
     &.section-auth-1 {
         .form-panel {
             width: 390px;
+            max-width: 100% !important;
             overflow: hidden;
             position: relative;
             padding: 30px 30px 15px;
@@ -300,6 +301,10 @@
             }
         }
     }
+}
+
+@media (max-width: 992px) {
+
 }
 
 /*------------------------------------
