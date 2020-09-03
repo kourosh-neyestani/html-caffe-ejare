@@ -5440,6 +5440,20 @@ Element: List of products
   margin-bottom: 12px;
 }
 
+@media (max-width: 768px) {
+  .el-products-list ul li {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  .el-products-list .item .image {
+    display: none !important;
+  }
+  .el-products-list .item .details {
+    padding: 0;
+    padding-left: 15px;
+  }
+}
+
 /*------------------------------------
 Element: Uploader
 ------------------------------------*/

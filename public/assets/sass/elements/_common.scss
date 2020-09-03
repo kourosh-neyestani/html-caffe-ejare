@@ -1411,6 +1411,26 @@ Element: List of products
     }
 }
 
+@media (max-width: 768px) {
+    .el-products-list {
+        ul {
+            li {
+                padding: 15px;
+                margin-bottom: 15px;
+            }
+        }
+        .item {
+            .image {
+                display: none !important;
+            }
+            .details {
+                padding: 0;
+                padding-left: 15px;
+            }
+        }
+    }
+}
+
 /*------------------------------------
 Element: Uploader
 ------------------------------------*/
