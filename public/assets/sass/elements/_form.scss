@@ -656,3 +656,76 @@ Forms
         color: #ffed85;
     }
 }
+
+
+.form-item {
+    &.form-item-select-multistep {
+        position: relative;
+        ul {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            display: none;
+            position: absolute;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: $base-0;
+            li {
+                height: 36px;
+                display: block;
+                line-height: 36px;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin-bottom: 3px;
+                border-bottom: 1px solid #000;
+            }
+        }
+        & > ul {
+            color: red;
+            background-color: darkred;
+            & > li {
+                color: pink;
+                & > ul {
+                    color: blue;
+                    padding: 0 15px;
+                    background-color: darkblue;
+                    & > li {
+                        color: lightblue;
+                        & > ul {
+                            color: yellowgreen;
+                            padding: 0 15px;
+                            background-color: darkgreen;
+                            * > li {
+                                color: yellow;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .dropdown {
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 240px;
+            z-index: 999;
+            display: none;
+            position: absolute;
+            overflow-y: scroll;
+            border: 1px solid red;
+            box-shadow: $default-bs;
+            border-radius: $default-br;
+            background-color: $base-0;
+            &.active {
+                display: block;
+                & > ul {
+                    display: block;
+                    background-color: red;
+                }
+            }
+        }
+    }
+}

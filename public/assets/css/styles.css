@@ -3070,6 +3070,88 @@ Forms
   color: #ffed85;
 }
 
+.form-item.form-item-select-multistep {
+  position: relative;
+}
+
+.form-item.form-item-select-multistep ul {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  display: none;
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: var(--base-0);
+}
+
+.form-item.form-item-select-multistep ul li {
+  height: 36px;
+  display: block;
+  line-height: 36px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 3px;
+  border-bottom: 1px solid #000;
+}
+
+.form-item.form-item-select-multistep > ul {
+  color: red;
+  background-color: darkred;
+}
+
+.form-item.form-item-select-multistep > ul > li {
+  color: pink;
+}
+
+.form-item.form-item-select-multistep > ul > li > ul {
+  color: blue;
+  padding: 0 15px;
+  background-color: darkblue;
+}
+
+.form-item.form-item-select-multistep > ul > li > ul > li {
+  color: lightblue;
+}
+
+.form-item.form-item-select-multistep > ul > li > ul > li > ul {
+  color: yellowgreen;
+  padding: 0 15px;
+  background-color: darkgreen;
+}
+
+.form-item.form-item-select-multistep > ul > li > ul > li > ul * > li {
+  color: yellow;
+}
+
+.form-item.form-item-select-multistep .dropdown {
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 240px;
+  z-index: 999;
+  display: none;
+  position: absolute;
+  overflow-y: scroll;
+  border: 1px solid red;
+  -webkit-box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.09);
+          box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.09);
+  border-radius: 6px;
+  background-color: var(--base-0);
+}
+
+.form-item.form-item-select-multistep .dropdown.active {
+  display: block;
+}
+
+.form-item.form-item-select-multistep .dropdown.active > ul {
+  display: block;
+  background-color: red;
+}
+
 /*------------------------------------
     Element: Button
 ------------------------------------*/

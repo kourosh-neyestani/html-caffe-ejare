@@ -154,10 +154,76 @@
         });
     };
 
+    AFRA.MultistepSelect = function () {
+        var div = $(".form-item-select-multistep2");
+        var input = div.find("input");
+        var dropdown = div.find(".dropdown");
+
+        div.on("click", function () {
+            // Dropdown
+            dropdown.addClass("active");
+        })
+
+        div.find(".menu_0").closest("li").on("click", function() {
+            $(this).addClass("bg-primary")
+            $(this).hide();
+        })
+
+        div.find("li").on("click", function (e) {
+            e.stopPropagation();
+
+            // Set data
+            var value = $(this).attr("data-multistep-select-value");
+            input.val(value);
+        });
+
+        // HTML output
+
+        // <div class="form-item form-item-select-multistep2">
+        //     <label class="form-label"><span>دنبال چی می گردی؟</span></label>
+        //     <input type="text" name="text" placeholder="جستجو بر اساس نام کالا">
+        //     <div class="dropdown">
+        //         <ul class="menu_0">
+        //             <li data-multistep-select-value="1">
+        //                 <span>کتگوری اصلی ۱</span>
+        //             </li>
+        //             <li class="has-child" data-multistep-select-value="2">
+        //                 <span>کتگوری اصلی 2</span>
+        //                 <ul class="menu_1">
+        //                     <li data-multistep-select-value="21">
+        //                         <span>کتگوری پدر ۱</span>
+        //                     </li>
+        //                     <li data-multistep-select-value="22">
+        //                         <span>کتگوری پدر ۲</span>
+        //                         <ul class="menu_2">
+        //                             <li data-multistep-select-value="221">
+        //                                 <span>کتگوری فرزند ۱</span>
+        //                             </li>
+        //                             <li data-multistep-select-value="222">
+        //                                 <span>کتگوری فرزند ۲</span>
+        //                             </li>
+        //                             <li data-multistep-select-value="223">
+        //                                 <span>کتگوری فرزند ۳</span>
+        //                             </li>
+        //                         </ul>
+        //                     </li>
+        //                     <li data-multistep-select-value="23">
+        //                         <span>کتگوری پدر ۳</span>
+        //                     </li>
+        //                 </ul>
+        //             </li>
+        //             <li data-multistep-select-value="2">
+        //                 <span>کتگوری اصلی 3</span>
+        //             </li>
+        //         </ul>
+        //     </div>
+        // </div>
+    };
+
     $(window).on("load", function () {});
 
     $(document).ready(function () {
-        AFRA.StickyHeader(), AFRA.Carousel(), AFRA.DefaultTabs(), AFRA.Accordion(), AFRA.Masonry();
+        AFRA.StickyHeader(), AFRA.Carousel(), AFRA.DefaultTabs(), AFRA.Accordion(), AFRA.Masonry(), AFRA.MultistepSelect();
         AFRA.UploadAvatar();
     });
 })($);
