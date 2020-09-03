@@ -50,6 +50,37 @@ $header-height: 80px;
                 }
             }
         }
+        .button-menu {
+            top: 9px;
+            right: 0;
+            width: 33px;
+            height: 50px;
+            z-index: 99;
+            display: none;
+            padding: 0;
+            position: absolute;
+            padding-top: 12px;
+            span {
+                &,
+                &:before,
+                &:after {
+                    width: 33px;
+                    height: 3px;
+                    float: left;
+                    display: block;
+                    position: relative;
+                    background-color: $base-1;
+                }
+                &:before {
+                    top: -10px;
+                    content: "";
+                }
+                &:after {
+                    bottom: -8px;
+                    content: "";
+                }
+            }
+        }
     }
     &:before {
         right: 0;
@@ -99,6 +130,11 @@ $header-height: 80px;
                 height: inherit;
                 font-size: 12px;
                 padding: 9px 15px;
+            }
+            .button-menu {
+                top: 0;
+                right: 0;
+                display: block !important;
             }
         }
     }
