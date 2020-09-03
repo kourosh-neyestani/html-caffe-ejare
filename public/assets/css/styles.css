@@ -5202,7 +5202,7 @@ form .input-select .select2-container--default .select2-selection--single .selec
 
 @media (max-width: 992px) {
   .el-cta p {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
   .el-cta .button {
     bottom: 0;
@@ -5810,7 +5810,7 @@ Element: Uploader
     font-size: 10px;
   }
   .section-hero.section-hero-1 .content h1 {
-    font-size: 24px;
+    font-size: 27px;
   }
 }
 
