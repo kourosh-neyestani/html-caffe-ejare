@@ -2300,6 +2300,15 @@ h6,
   position: absolute;
 }
 
+@media (max-width: 992px) {
+  .app-footer .footer-widgets {
+    margin-bottom: -30px;
+  }
+  .app-footer .footer-widgets .widget-links {
+    margin-bottom: 30px;
+  }
+}
+
 /*------------------------------------
     Sidebar
 ------------------------------------*/

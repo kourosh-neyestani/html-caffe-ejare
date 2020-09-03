@@ -14,7 +14,7 @@
     }
     .footer-copyright {
         z-index: 15;
-        padding: 15px 0;  
+        padding: 15px 0;
         position: relative;
         p {
             text-align: center;
@@ -66,6 +66,17 @@
             left: 0;
             width: 50%;
             position: absolute;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .app-footer {
+        .footer-widgets {
+            margin-bottom: -30px;
+            .widget-links {
+                margin-bottom: 30px;
+            }
         }
     }
 }
