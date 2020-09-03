@@ -5928,6 +5928,13 @@ Element: Uploader
   line-height: 1.6;
 }
 
+@media (max-width: 768px) {
+  .section-blog-single-post.section-blog-single-post-1 .single-post .details h1 {
+    font-size: 21px;
+    line-height: 1.6;
+  }
+}
+
 /*------------------------------------
 testimonial
 ------------------------------------*/
