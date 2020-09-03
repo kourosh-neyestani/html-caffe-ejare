@@ -1257,6 +1257,15 @@ $el-accordion-size: 84px;
             bottom: 0;
             position: relative;
         }
+        &.el-cta-4 { 
+            text-align: center;
+            p {
+                text-align: center;
+            }
+            h3 {
+                font-size: 21px;
+            }
+        }
     }
 }
 

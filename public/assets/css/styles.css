@@ -5289,6 +5289,15 @@ form .input-select .select2-container--default .select2-selection--single .selec
     bottom: 0;
     position: relative;
   }
+  .el-cta.el-cta-4 {
+    text-align: center;
+  }
+  .el-cta.el-cta-4 p {
+    text-align: center;
+  }
+  .el-cta.el-cta-4 h3 {
+    font-size: 21px;
+  }
 }
 
 /*------------------------------------
