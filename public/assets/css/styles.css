@@ -2410,7 +2410,8 @@ Forms
 .form-3 .form-item input[type="email"],
 .form-3 .form-item input[type="number"],
 .form-3 .form-item input[type="search"],
-.form-3 .form-item input[type="password"] {
+.form-3 .form-item input[type="password"],
+.form-3 .form-item .input-default-style {
   width: 100%;
   display: block;
   min-height: 45px;
@@ -2429,8 +2430,14 @@ Forms
 .form-3 .form-item input[type="email"]:focus,
 .form-3 .form-item input[type="number"]:focus,
 .form-3 .form-item input[type="search"]:focus,
-.form-3 .form-item input[type="password"]:focus {
+.form-3 .form-item input[type="password"]:focus,
+.form-3 .form-item .input-default-style:focus {
   border-color: var(--primary);
+}
+
+.form-3 .form-item .input-default-style {
+  padding-top: 15px;
+  padding-left: 15px;
 }
 
 .form-3 .form-item textarea {
@@ -3001,6 +3008,66 @@ Forms
   margin-bottom: 30px;
   padding-bottom: 15px;
   border-bottom: 1px solid var(--gray);
+}
+
+.el-stars-score {
+  /****** Style Star Rating Widget *****/
+  /***** CSS Magic to Highlight Stars on Hover *****/
+  /* hover previous stars in list */
+}
+
+.el-stars-score fieldset,
+.el-stars-score label {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.el-stars-score .rating {
+  border: none;
+  float: left;
+}
+
+.el-stars-score .rating > input {
+  display: none;
+}
+
+.el-stars-score .rating > label:before {
+  margin: 0 3px;
+  font-size: 14px;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.el-stars-score .rating > .half {
+  z-index: 15;
+  position: relative;
+  background-color: red !important;
+}
+
+.el-stars-score .rating > .half:before {
+  left: 0;
+  content: "\f089";
+  position: absolute;
+}
+
+.el-stars-score .rating > label {
+  color: #ddd;
+  float: right;
+}
+
+.el-stars-score .rating > input:checked ~ label,
+.el-stars-score .rating:not(:checked) > label:hover,
+.el-stars-score .rating:not(:checked) > label:hover ~ label {
+  color: #ffd700;
+}
+
+.el-stars-score .rating > input:checked + label:hover,
+.el-stars-score .rating > input:checked ~ label:hover,
+.el-stars-score .rating > label:hover ~ input:checked ~ label,
+.el-stars-score .rating > input:checked ~ label:hover ~ label {
+  color: #ffed85;
 }
 
 /*------------------------------------

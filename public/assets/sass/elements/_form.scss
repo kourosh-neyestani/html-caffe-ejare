@@ -82,7 +82,7 @@ Forms
             border-radius: 25px;
             background-color: #ccc;
             transition: all 0.4s;
-        }   
+        }
         input {
             display: none;
             &:checked + div {
@@ -116,7 +116,8 @@ Forms
         input[type="email"],
         input[type="number"],
         input[type="search"],
-        input[type="password"] {
+        input[type="password"],
+        .input-default-style {
             width: 100%;
             display: block;
             min-height: 45px;
@@ -127,6 +128,10 @@ Forms
             &:focus {
                 border-color: $primary;
             }
+        }
+        .input-default-style {
+            padding-top: 15px;
+            padding-left: 15px;
         }
         textarea {
             padding-top: 15px;
@@ -599,5 +604,55 @@ Forms
                 border-bottom: 1px solid $gray;
             }
         }
+    }
+}
+
+.el-stars-score {
+    fieldset,
+    label {
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+    /****** Style Star Rating Widget *****/
+    .rating {
+        border: none;
+        float: left;
+    }
+    .rating > input {
+        display: none;
+    }
+    .rating > label:before {
+        margin: 0 3px;
+        font-size: 14px;
+        font-family: FontAwesome;
+        display: inline-block;
+        content: "\f005";
+    }
+    .rating > .half {
+        z-index: 15;
+        position: relative;
+        background-color:red !important;
+    }
+    .rating > .half:before {
+        left: 0;
+        content: "\f089";
+        position: absolute;
+    }
+    .rating > label {
+        color: #ddd;
+        float: right;
+    }
+    /***** CSS Magic to Highlight Stars on Hover *****/
+    .rating > input:checked ~ label, /* show gold star when clicked */
+    .rating:not(:checked) > label:hover, /* hover current star */
+    .rating:not(:checked) > label:hover ~ label {
+        color: #ffd700;
+    } /* hover previous stars in list */
+    .rating > input:checked + label:hover, /* hover current star when changing rating */
+    .rating > input:checked ~ label:hover,
+    .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+    .rating > input:checked ~ label:hover ~ label {
+        color: #ffed85;
     }
 }
