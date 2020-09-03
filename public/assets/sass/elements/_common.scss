@@ -1157,6 +1157,18 @@ $el-accordion-size: 84px;
     }
 }
 
+@media (max-width: 992px) {
+    .el-cta {
+        p {
+            margin-bottom: 15px;
+        }
+        .button {
+            bottom: 0;
+            position: relative;
+        }
+    }
+}
+
 /*------------------------------------
 Element: Counter
 ------------------------------------*/

@@ -5191,6 +5191,16 @@ form .input-select .select2-container--default .select2-selection--single .selec
   margin-left: 3px;
 }
 
+@media (max-width: 992px) {
+  .el-cta p {
+    margin-bottom: 15px;
+  }
+  .el-cta .button {
+    bottom: 0;
+    position: relative;
+  }
+}
+
 /*------------------------------------
 Element: Counter
 ------------------------------------*/
