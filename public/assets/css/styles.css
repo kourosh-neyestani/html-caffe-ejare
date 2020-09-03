@@ -5342,10 +5342,8 @@ Element: Uploader
   background-color: var(--base-1);
 }
 
-@media (min-width: 1200px) {
-  .check-user-device {
-    display: none;
-  }
+.check-user-device {
+  display: none !important;
 }
 
 /*------------------------------------

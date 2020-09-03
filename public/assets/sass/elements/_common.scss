@@ -1679,8 +1679,12 @@ Element: Uploader
     background-color: $base-1;
 }
 
-@media (min-width: 1200px) {
-    .check-user-device {
-        display: none;
-    }
+// @media (min-width: 1200px) {
+//     .check-user-device {
+//         display: none;
+//     }
+// }
+
+.check-user-device {
+    display: none !important;
 }
