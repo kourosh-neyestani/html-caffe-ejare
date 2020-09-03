@@ -229,6 +229,7 @@
         ul {
             list-style: none;
             user-select: none;
+            white-space: nowrap;
             border-bottom: 1px solid #ccc;
             padding: 0;
             margin: 0;
@@ -276,6 +277,38 @@
     }
 }
 
+@media (max-width: 992px) {
+    .el-tabs {
+        .el-tabs-links {
+            ul {
+                li {
+                    font-size: 12px;
+                    padding: 0 15px;
+                }
+            }
+        }
+        .el-tabs-content {
+            & > ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                & > li {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    h2,
+                    h3,
+                    h4 {
+                        font-size: 14px;
+                    }
+                }
+            }
+            form {
+                margin-bottom: 45px;
+            }
+        }
+    }
+}
+
 /*------------------------------------
     Element: Table
 ------------------------------------*/
@@ -318,6 +351,23 @@
             &:nth-child(odd) {
                 td {
                     background: #f7f7f7;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .el-table {
+        tbody {
+            tr {
+                height: 90px;
+                td {
+                    width: 100% !important;
+                    display: block;
+                    &.specvalue {
+                        color: $primary;    
+                    }
                 }
             }
         }
@@ -698,6 +748,28 @@ $el-accordion-size: 84px;
                 padding-right: 15px;
                 p {
                     font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .el-comments {
+        & > ul {
+            & > li {
+                .el-comments-avatar {
+                    width: 45px;
+                    height: 45px;
+                }
+                .el-comments-author {
+                    top: 15px;
+                    right: 75px;
+                    position: absolute;
+                }
+                .el-comments-date,
+                .el-comments-content {
+                    padding: 0;
                 }
             }
         }
