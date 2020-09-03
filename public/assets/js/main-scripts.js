@@ -268,10 +268,22 @@
         });
     }
 
+    /*====== Sidenav - Side Navigation Menu ======*/
+    AFRA.Sidenav = function () {
+        var header = $(".app-header");
+        var sidenav = $(".app-sidenav");
+        header.on("click", ".button-open-sidenav", function () {
+            sidenav.addClass("active");
+        });
+        sidenav.on("click", ".button-close-sidenav, .sidenav-close, .sidenav-menu a", function () {
+            sidenav.removeClass("active");
+        });
+    };
+
     $(window).on("load", function () {});
 
     $(document).ready(function () {
-        AFRA.StickyHeader(), AFRA.Carousel(), AFRA.DefaultTabs(), AFRA.Accordion(), AFRA.Masonry(), AFRA.Select2(), AFRA.MultistepSelect();
+        AFRA.StickyHeader(), AFRA.Carousel(), AFRA.DefaultTabs(), AFRA.Accordion(), AFRA.Masonry(), AFRA.Select2(), AFRA.MultistepSelect(), AFRA.Sidenav();
         AFRA.UploadAvatar();
     });
 })($);

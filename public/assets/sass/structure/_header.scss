@@ -51,32 +51,30 @@ $header-height: 80px;
             }
         }
         .button-menu {
-            top: 9px;
-            right: 0;
-            width: 33px;
-            height: 50px;
+            width: 48px;
+            height: 48px;
             z-index: 99;
+            display: block;
             display: none;
-            padding: 0;
-            position: absolute;
-            padding-top: 12px;
+            overflow: hidden;
+            border-radius: 50%;
+            background-color: $base-0;
             span {
                 &,
                 &:before,
                 &:after {
-                    width: 33px;
+                    width: 30px;
                     height: 3px;
-                    float: left;
                     display: block;
                     position: relative;
-                    background-color: $base-1;
+                    background-color: $primary;
                 }
                 &:before {
-                    top: -10px;
+                    top: -9px;
                     content: "";
                 }
                 &:after {
-                    bottom: -8px;
+                    bottom: -6px;
                     content: "";
                 }
             }
@@ -126,10 +124,14 @@ $header-height: 80px;
             .button-icon {
                 display: none !important;
             }
+            .header-links {
+                width: 100%;
+            }
             .button-md {
                 height: inherit;
                 font-size: 12px;
                 padding: 9px 15px;
+                border-radius: 2px;
             }
             .button-menu {
                 top: 0;
