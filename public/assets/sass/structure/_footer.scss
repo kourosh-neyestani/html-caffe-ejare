@@ -74,8 +74,18 @@
     .app-footer {
         .footer-widgets {
             margin-bottom: -30px;
-            .widget-links {
-                margin-bottom: 30px;
+            .widget {
+                &.widget-links {
+                    margin-bottom: 30px;
+                    .text {
+                        font-size: 12px;
+                    }
+                }
+                .widget-title {
+                    h4 {
+                        font-size: 14px;
+                    }
+                }
             }
         }
     }

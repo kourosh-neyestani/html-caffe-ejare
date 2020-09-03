@@ -2308,8 +2308,14 @@ h6,
   .app-footer .footer-widgets {
     margin-bottom: -30px;
   }
-  .app-footer .footer-widgets .widget-links {
+  .app-footer .footer-widgets .widget.widget-links {
     margin-bottom: 30px;
+  }
+  .app-footer .footer-widgets .widget.widget-links .text {
+    font-size: 12px;
+  }
+  .app-footer .footer-widgets .widget .widget-title h4 {
+    font-size: 14px;
   }
 }
 
