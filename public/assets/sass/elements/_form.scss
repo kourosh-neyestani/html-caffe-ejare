@@ -136,21 +136,6 @@ Forms
         textarea {
             padding-top: 15px;
         }
-        .input-select {
-            padding: 0 !important;
-            .select2-container .select2-selection--single {
-                height: 45px;
-            }
-            .select2-container--default .select2-selection--single .select2-selection__arrow b {
-                right: 30px !important;
-            }
-            .select2-container--default .select2-selection--single .select2-selection__rendered,
-            .select2-container--default .select2-selection--single .select2-selection__placeholder {
-                color: $black;
-                font-size: 12px !important;
-                padding-left: 20px !important;
-            }
-        }
         .input-select-multiple {
             overflow: hidden;
             height: 45px !important;
@@ -317,21 +302,6 @@ Forms
             border-bottom: 3px solid #e3e3e3;
             &:focus {
                 border-color: $primary;
-            }
-        }
-        .input-select {
-            padding: 0 !important;
-            .select2-container .select2-selection--single {
-                height: 45px;
-            }
-            .select2-container--default .select2-selection--single .select2-selection__arrow b {
-                right: 30px !important;
-            }
-            .select2-container--default .select2-selection--single .select2-selection__rendered,
-            .select2-container--default .select2-selection--single .select2-selection__placeholder {
-                color: $black;
-                font-size: 12px !important;
-                padding-left: 20px !important;
             }
         }
         .input-select-multiple {
@@ -632,7 +602,7 @@ Forms
     .rating > .half {
         z-index: 15;
         position: relative;
-        background-color:red !important;
+        background-color: red !important;
     }
     .rating > .half:before {
         left: 0;
@@ -656,7 +626,6 @@ Forms
         color: #ffed85;
     }
 }
-
 
 .form-item {
     &.form-item-select-multistep {
@@ -728,4 +697,72 @@ Forms
             }
         }
     }
+}
+
+form {
+    .input-select {
+        height: 45px !important;
+        padding: 0 !important;
+        .select2-container .select2-selection--single {
+            height: 45px;
+        }
+        .select2-container--default .select2-selection--single .select2-selection__arrow b {
+            right: 30px !important;
+        }
+        .select2-container--default .select2-selection--single .select2-selection__rendered,
+        .select2-container--default .select2-selection--single .select2-selection__placeholder {
+            color: $text-color;
+            font-size: 12px;
+            font-weight: 400;
+            padding-top: 7px;
+            padding-left: 20px;
+            padding-right: 12px;
+        }
+        .select2-container--default .select2-selection--single {
+            height: inherit;
+            border: 0;
+            outline: 0 !important;
+        }
+        .select2-container--default[dir="rtl"] .select2-selection--single .select2-selection__arrow {
+            top: 7px;
+            left: 30px;
+            right: inherit;
+        }
+    }
+}
+
+.select2-dropdown {
+    font-size: 12px;
+    border: 1px solid #eee !important;
+    padding: 3px;
+}
+.select2-results {
+    .text {
+        display: block;
+        font-size: 12px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-right: 20px;
+    }
+}
+.select2-container--default .select2-results__group {
+    display: block;
+    font-size: 12px;
+    padding-top: 9px;
+    padding-bottom: 9px;    
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: #eee;
+    .text {
+        color: #5897fb;
+    }
+}
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    height: 39px !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 2px;
+    border-color: #ccc;
+    box-shadow: $default-bs;
+    border-radius: $default-br;
 }

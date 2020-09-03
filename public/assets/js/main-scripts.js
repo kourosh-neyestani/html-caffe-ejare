@@ -154,6 +154,7 @@
         });
     };
 
+    /*====== Multistep select ======*/
     AFRA.MultistepSelect = function () {
         var div = $(".form-item-select-multistep2");
         var input = div.find("input");
@@ -220,10 +221,39 @@
         // </div>
     };
 
+    /*====== Select2 ======*/
+    AFRA.Select2 = function() {
+        function formatDefault(state) {
+            if (!state.id) {
+                return state.text;
+            }
+            var $state = $('<span class="text">' + state.text + "</span>");
+            return $state;
+        }
+
+        $(".el-select2-category").select2({
+            dir: "rtl",
+            placeholder: "مهارت مورد نیاز",
+            templateResult: formatDefault,
+        });
+
+        $(".el-select2-city").select2({
+            dir: "rtl",
+            placeholder: "مهارت مورد نیاز",
+            templateResult: formatDefault,
+        });
+
+        $(".el-select2-date").select2({
+            dir: "rtl",
+            placeholder: "جستجو بر اساس تاریخ آگهی",
+            templateResult: formatDefault,
+        });
+    }
+
     $(window).on("load", function () {});
 
     $(document).ready(function () {
-        AFRA.StickyHeader(), AFRA.Carousel(), AFRA.DefaultTabs(), AFRA.Accordion(), AFRA.Masonry(), AFRA.MultistepSelect();
+        AFRA.StickyHeader(), AFRA.Carousel(), AFRA.DefaultTabs(), AFRA.Accordion(), AFRA.Masonry(), AFRA.Select2(), AFRA.MultistepSelect();
         AFRA.UploadAvatar();
     });
 })($);
