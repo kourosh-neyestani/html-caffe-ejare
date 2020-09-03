@@ -766,3 +766,7 @@ form {
     box-shadow: $default-bs;
     border-radius: $default-br;
 }
+
+form .input-select .select2-container--default .select2-selection--single .select2-selection__rendered, form .input-select .select2-container--default .select2-selection--single .select2-selection__placeholder {
+    padding-right: 25px;
+}

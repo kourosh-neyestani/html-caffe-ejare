@@ -237,6 +237,12 @@
             templateResult: formatDefault,
         });
 
+        $(".el-select2-set-category").select2({
+            dir: "rtl",
+            placeholder: "",
+            templateResult: formatDefault,
+        });
+
         $(".el-select2-city").select2({
             dir: "rtl",
             placeholder: "جستجو در همه شهر ها",
@@ -246,6 +252,18 @@
         $(".el-select2-date").select2({
             dir: "rtl",
             placeholder: "جستجو بر اساس تاریخ آگهی",
+            templateResult: formatDefault,
+        });
+
+        $(".el-select2-set-date").select2({
+            dir: "rtl",
+            placeholder: "",
+            templateResult: formatDefault,
+        });
+
+        $(".el-select2-set-gender").select2({
+            dir: "rtl",
+            placeholder: "",
             templateResult: formatDefault,
         });
     }

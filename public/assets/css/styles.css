@@ -3189,6 +3189,11 @@ form .input-select .select2-container--default[dir="rtl"] .select2-selection--si
   border-radius: 6px;
 }
 
+form .input-select .select2-container--default .select2-selection--single .select2-selection__rendered,
+form .input-select .select2-container--default .select2-selection--single .select2-selection__placeholder {
+  padding-right: 25px;
+}
+
 /*------------------------------------
     Element: Button
 ------------------------------------*/
