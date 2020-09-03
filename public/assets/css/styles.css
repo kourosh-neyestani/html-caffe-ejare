@@ -1414,6 +1414,10 @@ h6,
   padding-right: 45px !important;
 }
 
+.pb-30 {
+  padding-bottom: 30px;
+}
+
 /*------------------------------------
     Helpers
 ------------------------------------*/
@@ -4030,8 +4034,13 @@ form .input-select .select2-container--default .select2-selection--single .selec
 }
 
 .el-card-product .details .name {
+  display: block;
   font-size: 16px;
   line-height: 1.7;
+}
+
+.el-card-product:hover .details .name {
+  color: var(--primary);
 }
 
 /*------------------------------------
@@ -4977,7 +4986,13 @@ form .input-select .select2-container--default .select2-selection--single .selec
   margin: 0 auto;
 }
 
-.el-pagination li {
+.el-pagination ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.el-pagination ul li {
   height: 33px;
   min-width: 33px;
   line-height: 33px;
@@ -4994,22 +5009,22 @@ form .input-select .select2-container--default .select2-selection--single .selec
   border: 1px solid transparent;
 }
 
-.el-pagination li a {
+.el-pagination ul li a {
   display: block;
 }
 
-.el-pagination li .fa {
+.el-pagination ul li .fa {
   top: 1px;
   padding-left: 6px;
   position: relative;
   display: inline-block;
 }
 
-.el-pagination li:hover {
+.el-pagination ul li:hover {
   color: var(--base-1);
 }
 
-.el-pagination li.active {
+.el-pagination ul li.active {
   color: var(--secondary);
   border-color: var(--gray);
   -webkit-box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.09);
@@ -5025,6 +5040,12 @@ form .input-select .select2-container--default .select2-selection--single .selec
           box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.09);
   border-radius: 6px;
   background-color: var(--base-0);
+}
+
+@media (max-width: 992px) {
+  .el-search-box {
+    padding: 15px;
+  }
 }
 
 /*------------------------------------
@@ -5929,9 +5950,9 @@ testimonial
     Section: Search Box Banner
 ------------------------------------*/
 .section-search-box {
-  height: 540px;
   position: relative;
   padding-top: 45px;
+  padding-bottom: 30px;
   background-color: var(--gray);
 }
 
@@ -5949,6 +5970,28 @@ testimonial
   position: absolute;
   background: -webkit-gradient(linear, left bottom, left top, from(var(--base-0)), to(transparent));
   background: linear-gradient(0deg, var(--base-0), transparent);
+}
+
+@media (min-width: 992px) {
+  .section-search-box {
+    padding-bottom: 180px;
+  }
+}
+
+@media (max-width: 992px) {
+  .section-search-box .display-custom {
+    padding-top: 30px;
+  }
+}
+
+/*------------------------------------
+    Section: Products
+------------------------------------*/
+@media (min-width: 992px) {
+  .section-products {
+    top: -90px;
+    position: relative;
+  }
 }
 
 /*------------------------------------
@@ -6215,11 +6258,6 @@ testimonial
 /*------------------------------------
     Section: Products
 ------------------------------------*/
-.section-products {
-  top: -90px;
-  position: relative;
-}
-
 /*------------------------------------
     Section: Portfolio
 ------------------------------------*/

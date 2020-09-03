@@ -61,8 +61,16 @@
     .details {
         padding: 0 20px;
         .name {
+            display: block;
             font-size: 16px;
             line-height: 1.7;
+        }
+    }
+    &:hover {
+        .details {
+            .name {
+                color: $primary;
+            }
         }
     }
 }
@@ -954,34 +962,39 @@ $el-accordion-size: 84px;
     text-align: left;
     white-space: nowrap;
     margin: 0 auto;
-    li {
-        height: 33px;
-        min-width: 33px;
-        line-height: 33px;
-        color: #999;
-        cursor: pointer;
-        font-size: 0.9em;
-        text-align: center;
-        user-select: none;
-        display: inline-block;
-        border-radius: 50%;
-        border: 1px solid transparent;
-        a {
-            display: block;
-        }
-        .fa {
-            top: 1px;
-            padding-left: 6px;
-            position: relative;
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            height: 33px;
+            min-width: 33px;
+            line-height: 33px;
+            color: #999;
+            cursor: pointer;
+            font-size: 0.9em;
+            text-align: center;
+            user-select: none;
             display: inline-block;
-        }
-        &:hover {
-            color: $base-1;
-        }
-        &.active {
-            color: $secondary;
-            border-color: $gray;
-            box-shadow: $default-bs;
+            border-radius: 50%;
+            border: 1px solid transparent;
+            a {
+                display: block;
+            }
+            .fa {
+                top: 1px;
+                padding-left: 6px;
+                position: relative;
+                display: inline-block;
+            }
+            &:hover {
+                color: $base-1;
+            }
+            &.active {
+                color: $secondary;
+                border-color: $gray;
+                box-shadow: $default-bs;
+            }
         }
     }
 }
@@ -995,6 +1008,12 @@ $el-accordion-size: 84px;
     box-shadow: $default-bs;
     border-radius: $default-br;
     background-color: $base-0;
+}
+
+@media (max-width: 992px) {
+    .el-search-box {
+        padding: 15px;
+    }
 }
 
 /*------------------------------------
