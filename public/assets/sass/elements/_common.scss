@@ -297,7 +297,6 @@
             padding: 0;
             margin: 0;
             & > li {
-                padding: 30px;
                 padding-top: 45px;
                 h2,
                 h3,
@@ -310,6 +309,10 @@
                 }
                 &:not(.active) {
                     display: none;
+                }
+                &:not(:last-child) {
+                    padding-left: 30px;
+                    padding-right: 30px;
                 }
             }
         }
