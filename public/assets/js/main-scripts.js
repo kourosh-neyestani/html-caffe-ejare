@@ -94,7 +94,7 @@
     /*====== Modal ======*/
     AFRA.Modal = function () {
         var body = $("body");
-        var btnModal = $("button[data-modal-id]");
+        var btnModal = $("button[data-modal-id], a[data-modal-id]");
         var btnClose = $(".el-modal-overlay .modal-close");
 
         btnModal.on("click", function (e) {
@@ -106,17 +106,16 @@
             modal.addClass("active");
             overlay.show();
             overlay.addClass("active");
-            console.log(btnModal);
         });
 
         btnClose.on("click", function () {
             var modal = $(".el-modal");
             var overlay = $(".el-modal-overlay");
-            console.log("c");
             body.removeClass("state-menu");
             modal.removeClass("active");
             overlay.hide();
             overlay.removeClass("active");
+            modal.addClass("ass")
         });
     };
 
