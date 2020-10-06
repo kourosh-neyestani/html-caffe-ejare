@@ -83,6 +83,7 @@
 
     /*====== Modal ======*/
     AFRA.Modal = function () {
+
         var body = $("body");
         var btnModal = $("button[data-modal-id]");
         var btnClose = $(".el-modal-overlay .modal-close");
