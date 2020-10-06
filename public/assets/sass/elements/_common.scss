@@ -27,6 +27,7 @@
     box-shadow: $default-bs;
     border-radius: $default-br;
     .image {
+        position: relative;
         padding-top: 100%;
         margin-bottom: 15px;
         border-bottom: 1px solid $gray;
@@ -35,6 +36,44 @@
             top: 0;
             left: 0;
             position: absolute;
+        }
+        .icons {
+            top: 0;
+            width: 50%;
+            padding: 9px;
+            display: block;
+            list-style: none;
+            position: absolute;
+            &.icons-left {
+                left: 0;
+            }
+            &.icons-right {
+                right: 0;
+            }
+            li {
+                height: 30px;
+                overflow: hidden;
+                display: inline-block;
+                padding: 0;
+                margin: 0;
+                .el-icon {
+                    color: $base-1;
+                    font-size: 10px;
+                    font-weight: bold;
+                    padding: 3px 6px;
+                    border-radius: $default-br;
+                    background-color: $base-0;
+                    &.el-icon-1 {
+                        color: $base-0;
+                        background-color: $danger;
+                    }
+                    &.el-icon-2 {
+                        color: $base-0;
+                        background-color: $warning;
+                    }
+                }
+        
+            }
         }
     }
     .footer {
@@ -465,7 +504,7 @@
             bottom: 18px;
             width: 15%;
             content: "";
-            z-index: 12;
+            z-index: -3;
             position: absolute;
         }
         &:before {
