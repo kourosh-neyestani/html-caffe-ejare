@@ -76,14 +76,23 @@
 
     /*====== Masonry Layout ======*/
     AFRA.Masonry = function () {
-        $(function () {
-            $(".masonry").masonry();
-        });
+        $(".masonry").masonry();
+    };
+
+    /*====== Toggle Number ======*/
+    AFRA.ButtonToggleValue = function () {
+        var btn = $(".button-toggle-value");
+
+        btn.on("click", function(e) {
+            e.preventDefault();
+
+            $(this).children(".text").hide();
+            $(this).children(".show-me").show();
+        })
     };
 
     /*====== Modal ======*/
     AFRA.Modal = function () {
-
         var body = $("body");
         var btnModal = $("button[data-modal-id]");
         var btnClose = $(".el-modal-overlay .modal-close");
@@ -332,7 +341,7 @@
     $(window).on("load", function () {});
 
     $(document).ready(function () {
-        AFRA.StickyHeader(), AFRA.Carousel(), AFRA.DefaultTabs(), AFRA.Accordion(), AFRA.Masonry(), AFRA.Modal(), AFRA.ModalTabs(), AFRA.Select2(), AFRA.MultistepSelect(), AFRA.Sidenav();
+        AFRA.StickyHeader(), AFRA.Carousel(), AFRA.DefaultTabs(), AFRA.Accordion(), AFRA.Masonry(), AFRA.Modal(), AFRA.ModalTabs(), AFRA.Select2(), AFRA.MultistepSelect(), AFRA.Sidenav(), AFRA.ButtonToggleValue();
         AFRA.UploadAvatar();
     });
 })($);

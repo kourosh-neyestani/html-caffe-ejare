@@ -4015,6 +4015,10 @@ form .input-select .select2-container--default .select2-selection--single .selec
           transform: rotate(-45deg);
 }
 
+.button-toggle-value .show-me {
+  display: none;
+}
+
 /*------------------------------------
     Element: Card
 ------------------------------------*/
