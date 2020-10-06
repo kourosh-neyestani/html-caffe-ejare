@@ -82,6 +82,14 @@
         background-color: #eee;
     }
 }
+.button-gray {
+    color: $base-1;
+    background-color: $gray;
+    &:hover {
+        color: $base-0;
+        background-color: $warning;
+    }
+}
 .button-default {
     color: $base-1;
     background-color: $default;

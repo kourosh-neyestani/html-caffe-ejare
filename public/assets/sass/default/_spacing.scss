@@ -9,6 +9,31 @@
     margin-bottom: $space;
 }
 
+.pt-space {
+    padding-top: $space;
+}
+.pb-space {
+    padding-bottom: $space;
+}
+.mt-space {
+    margin-top: $space;
+}
+.mb-space {
+    margin-bottom: $space;
+}
+.pt-space-half {
+    padding-top: $space / 2;
+}
+.pb-space-half {
+    padding-bottom: $space / 2;
+}
+.mt-space-half {
+    margin-top: $space / 2;
+}
+.mb-space-half {
+    margin-bottom: $space / 2;
+}
+
 .row-xs {
     margin-left: -6px;
     margin-right: -6px;
@@ -125,6 +150,9 @@
 }
 .pt-15 {
     padding-top: 15px;
+}
+.pt-20 {
+    padding-top: 20px;
 }
 .pt-30 {
     padding-top: 30px;

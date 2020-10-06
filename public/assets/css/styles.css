@@ -1258,6 +1258,38 @@ h6,
   margin-bottom: 100px;
 }
 
+.pt-space {
+  padding-top: 100px;
+}
+
+.pb-space {
+  padding-bottom: 100px;
+}
+
+.mt-space {
+  margin-top: 100px;
+}
+
+.mb-space {
+  margin-bottom: 100px;
+}
+
+.pt-space-half {
+  padding-top: 50px;
+}
+
+.pb-space-half {
+  padding-bottom: 50px;
+}
+
+.mt-space-half {
+  margin-top: 50px;
+}
+
+.mb-space-half {
+  margin-bottom: 50px;
+}
+
 .row-xs {
   margin-left: -6px;
   margin-right: -6px;
@@ -1392,6 +1424,10 @@ h6,
 
 .pt-15 {
   padding-top: 15px;
+}
+
+.pt-20 {
+  padding-top: 20px;
 }
 
 .pt-30 {
@@ -3684,6 +3720,16 @@ form .input-select .select2-container--default .select2-selection--single .selec
   background-color: #eee;
 }
 
+.button-gray {
+  color: var(--base-1);
+  background-color: var(--gray);
+}
+
+.button-gray:hover {
+  color: var(--base-0);
+  background-color: orange;
+}
+
 .button-default {
   color: var(--base-1);
   background-color: var(--default);
@@ -4244,6 +4290,10 @@ form .input-select .select2-container--default .select2-selection--single .selec
 ------------------------------------*/
 .el-tabs {
   overflow: hidden;
+  position: relative;
+}
+
+.el-tabs .el-tabs-links {
   position: relative;
 }
 
@@ -4899,6 +4949,14 @@ form .input-select .select2-container--default .select2-selection--single .selec
   direction: rtl !important;
   color: var(--text-color);
   font-size: 0.9em;
+}
+
+.el-panel-admin {
+  border: 1px solid var(--gray);
+}
+
+.el-panel-admin:hover {
+  background-color: #fdf8ef;
 }
 
 .el-panel-advert {
@@ -6631,6 +6689,12 @@ testimonial
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.section-dashboard-management .dashboard-tabs-buttons {
+  top: 6px;
+  left: 15px;
+  position: absolute;
 }
 
 /*------------------------------------

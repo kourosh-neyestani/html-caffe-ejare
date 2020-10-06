@@ -264,6 +264,7 @@
     overflow: hidden;
     position: relative;
     .el-tabs-links {
+        position: relative;
         ul {
             list-style: none;
             user-select: none;
@@ -881,6 +882,13 @@ $el-accordion-size: 84px;
                 font-size: 0.9em;
             }
         }
+    }
+}
+
+.el-panel-admin {
+    border: 1px solid $gray;
+    &:hover {
+        background-color: #fdf8ef;
     }
 }
 
