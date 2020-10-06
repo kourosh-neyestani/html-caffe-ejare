@@ -81,6 +81,51 @@
         });
     };
 
+    /*====== Modal ======*/
+    AFRA.Modal = function () {
+        var body = $("body");
+        var btnModal = $("button[data-modal-id]");
+        var btnClose = $(".el-modal-overlay .modal-close");
+
+        btnModal.on("click", function (e) {
+            e.preventDefault();
+            var data = $(this).data("modal-id");
+            var overlay = $(".el-modal-overlay[data-modal-id=" + data + "]");
+            var modal = overlay.find(".el-modal");
+            body.addClass("state-menu");
+            modal.addClass("active");
+            overlay.show();
+            overlay.addClass("active");
+            console.log(btnModal);
+        });
+
+        btnClose.on("click", function () {
+            var modal = $(".el-modal");
+            var overlay = $(".el-modal-overlay");
+            console.log("c");
+            body.removeClass("state-menu");
+            modal.removeClass("active");
+            overlay.hide();
+            overlay.removeClass("active");
+        });
+    };
+
+    /*====== Modal Tabs ======*/
+    AFRA.ModalTabs = function () {
+        var link = $("[data-modal-tab-link]");
+
+        link.on("click", function () {
+            var data = $(this).data("modal-tab-link");
+            var content = $("[data-modal-tab-content='" + data + "']");
+            if (!$(this).hasClass("active")) {
+                $(this).siblings().removeClass("active");
+                $(this).addClass("active");
+                content.siblings().removeClass("active");
+                content.addClass("active");
+            }
+        });
+    };
+
     /*====== Owl Carousel Setting ======*/
     AFRA.Carousel = function () {
         var owlEvent = function () {
@@ -164,12 +209,14 @@
         div.on("click", function () {
             // Dropdown
             dropdown.addClass("active");
-        })
+        });
 
-        div.find(".menu_0").closest("li").on("click", function() {
-            $(this).addClass("bg-primary")
-            $(this).hide();
-        })
+        div.find(".menu_0")
+            .closest("li")
+            .on("click", function () {
+                $(this).addClass("bg-primary");
+                $(this).hide();
+            });
 
         div.find("li").on("click", function (e) {
             e.stopPropagation();
@@ -223,7 +270,7 @@
     };
 
     /*====== Select2 ======*/
-    AFRA.Select2 = function() {
+    AFRA.Select2 = function () {
         function formatDefault(state) {
             if (!state.id) {
                 return state.text;
@@ -267,7 +314,7 @@
             placeholder: "",
             templateResult: formatDefault,
         });
-    }
+    };
 
     /*====== Sidenav - Side Navigation Menu ======*/
     AFRA.Sidenav = function () {
@@ -284,7 +331,7 @@
     $(window).on("load", function () {});
 
     $(document).ready(function () {
-        AFRA.StickyHeader(), AFRA.Carousel(), AFRA.DefaultTabs(), AFRA.Accordion(), AFRA.Masonry(), AFRA.Select2(), AFRA.MultistepSelect(), AFRA.Sidenav();
+        AFRA.StickyHeader(), AFRA.Carousel(), AFRA.DefaultTabs(), AFRA.Accordion(), AFRA.Masonry(), AFRA.Modal(), AFRA.ModalTabs(), AFRA.Select2(), AFRA.MultistepSelect(), AFRA.Sidenav();
         AFRA.UploadAvatar();
     });
 })($);
