@@ -6734,4 +6734,233 @@ testimonial
 /*------------------------------------
     Page
 ------------------------------------*/
+/*------------------------------------
+    Demo Options
+------------------------------------*/
+/*------------------------------------
+miro Demo Options
+------------------------------------*/
+.miro-demo {
+  top: 0;
+  right: -330px;
+  width: 330px;
+  color: #000;
+  direction: ltr;
+  z-index: 99999;
+  position: fixed;
+  background: #fff;
+  -webkit-transition: right 750ms;
+  transition: right 750ms;
+  font-family: "Poppins", sans-serif;
+}
+
+.miro-demo.active {
+  right: 0;
+}
+
+.miro-demo .row {
+  margin-left: -6px;
+  margin-right: -6px;
+}
+
+.miro-demo .row > div {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.miro-demo .miro-demo-close {
+  top: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  font-size: 21px;
+  line-height: 45px;
+  text-align: center;
+  position: absolute;
+}
+
+/* 
+* miro Demo Options - Panel
+*/
+.miro-demo .miro-demo-panel {
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  max-width: 330px;
+  min-height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  visibility: hidden;
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+}
+
+.miro-demo .miro-demo-panel .miro-demo-title {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  padding: 24px 30px;
+}
+
+.miro-demo .miro-demo-panel .miro-demo-subtitle {
+  display: block;
+  direction: ltr;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  padding: 30px 30px;
+  border-top: 1px solid #ccc;
+}
+
+.miro-demo.active .miro-demo-panel {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* 
+* miro Demo Options - Colors
+*/
+.miro-demo .miro-demo-panel .miro-demo-colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 30px;
+  margin-bottom: 0;
+}
+
+.miro-demo .miro-demo-panel .miro-demo-colors li {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  -ms-flex-item-align: auto;
+      -ms-grid-row-align: auto;
+      align-self: auto;
+  margin-bottom: 9px;
+}
+
+/* 
+* miro Demo Options - Layouts
+*/
+.miro-demo .miro-demo-pages {
+  list-style: none;
+  padding: 0 30px;
+}
+
+.miro-demo .miro-demo-pages li {
+  padding: 0 6px;
+}
+
+.miro-demo .miro-demo-pages li a {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 12px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0px 2px rgba(0, 0, 0, 0.3), 0 3px 12px rgba(0, 0, 0, 0.21);
+          box-shadow: 0 0px 2px rgba(0, 0, 0, 0.3), 0 3px 12px rgba(0, 0, 0, 0.21);
+}
+
+.miro-demo .miro-demo-pages li span {
+  left: 0;
+  right: 0;
+  height: 30px;
+  bottom: 0;
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  white-space: nowrap;
+  padding-top: 4px;
+  position: absolute;
+  background-color: #fff;
+}
+
+/* 
+* miro Demo Options - Toggle
+*/
+.miro-demo .miro-demo-toggle {
+  top: 120px;
+  left: -45px;
+  width: 45px;
+  height: 45px;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.75;
+  font-size: 27px;
+  line-height: 50px;
+  position: absolute;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  -webkit-transition: right 900ms;
+  transition: right 900ms;
+}
+
+.miro-demo .miro-demo-toggle i {
+  -webkit-transition: all 3s;
+  transition: all 3s;
+  -webkit-animation: rotation 6s infinite linear;
+          animation: rotation 6s infinite linear;
+}
+
+.miro-demo .miro-demo-toggle:hover {
+  opacity: 1;
+  background: #000;
+}
+
+/* 
+* miro Demo Options - Animations
+*/
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.rotation {
+  -webkit-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+}
 /*# sourceMappingURL=styles.css.map */
