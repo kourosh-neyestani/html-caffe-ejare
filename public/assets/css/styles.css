@@ -6519,6 +6519,7 @@ testimonial
 }
 
 .section-product.section-product-1 .product-gallery {
+  position: relative;
   padding-right: 4px;
 }
 
@@ -6535,6 +6536,51 @@ testimonial
   width: 100%;
   height: 100%;
   position: absolute;
+}
+
+.section-product.section-product-1 .product-gallery .icons {
+  top: 0;
+  width: 50%;
+  padding: 9px;
+  z-index: 9999999999;
+  display: block;
+  list-style: none;
+  position: absolute;
+}
+
+.section-product.section-product-1 .product-gallery .icons.icons-left {
+  left: 0;
+}
+
+.section-product.section-product-1 .product-gallery .icons.icons-right {
+  right: 0;
+}
+
+.section-product.section-product-1 .product-gallery .icons li {
+  height: 30px;
+  overflow: hidden;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.section-product.section-product-1 .product-gallery .icons li .el-icon {
+  color: var(--base-1);
+  font-size: 10px;
+  font-weight: bold;
+  padding: 3px 6px;
+  border-radius: 6px;
+  background-color: var(--base-0);
+}
+
+.section-product.section-product-1 .product-gallery .icons li .el-icon.el-icon-1 {
+  color: var(--base-0);
+  background-color: #f56c6c;
+}
+
+.section-product.section-product-1 .product-gallery .icons li .el-icon.el-icon-2 {
+  color: var(--base-0);
+  background-color: orange;
 }
 
 @media (max-width: 992px) {
