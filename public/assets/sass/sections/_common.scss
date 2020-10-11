@@ -139,6 +139,8 @@
 ------------------------------------*/
 
 .section-product {
+    overflow: hidden;
+    position: relative;
     &.section-product-1 {
         .product-details {
             position: relative;
@@ -232,7 +234,7 @@
                 top: 0;
                 width: 50%;
                 padding: 9px;
-                z-index: 9999999999;
+                z-index: 99;
                 display: block;
                 list-style: none;
                 position: absolute;
@@ -266,6 +268,33 @@
                     }
                 }
             }
+        }
+    }
+    &.deactivated {
+        .el-tabs {
+            display: none !important;
+        }
+        &:before {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: "";
+            z-index: 989;
+            opacity: .9;
+            position: absolute;
+            background-color: $base-0;
+        }
+        &:after { 
+            @extend .display-center;
+            color: $danger;
+            content: "این آگهی منقضی شده است.";
+            display: block;
+            z-index: 990;
+            font-size: 24px;
+            font-weight: 700;
+            text-align: center;
+            padding-top: 60px;
         }
     }
 }

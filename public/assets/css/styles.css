@@ -1600,7 +1600,7 @@ h6,
   display: block;
 }
 
-.display-center {
+.display-center, .section-product.deactivated:after {
   top: 50%;
   left: 50%;
   width: 100%;
@@ -5343,7 +5343,7 @@ form .input-select .select2-container--default .select2-selection--single .selec
   color: var(--primary);
 }
 
-.el-cta .display-center {
+.el-cta .display-center, .el-cta .section-product.deactivated:after {
   z-index: 3;
   text-align: center;
 }
@@ -6434,6 +6434,11 @@ testimonial
 /*------------------------------------
     Section: Details
 ------------------------------------*/
+.section-product {
+  overflow: hidden;
+  position: relative;
+}
+
 .section-product.section-product-1 .product-details {
   position: relative;
   padding-left: 6px;
@@ -6542,7 +6547,7 @@ testimonial
   top: 0;
   width: 50%;
   padding: 9px;
-  z-index: 9999999999;
+  z-index: 99;
   display: block;
   list-style: none;
   position: absolute;
@@ -6581,6 +6586,33 @@ testimonial
 .section-product.section-product-1 .product-gallery .icons li .el-icon.el-icon-2 {
   color: var(--base-0);
   background-color: orange;
+}
+
+.section-product.deactivated .el-tabs {
+  display: none !important;
+}
+
+.section-product.deactivated:before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: 989;
+  opacity: .9;
+  position: absolute;
+  background-color: var(--base-0);
+}
+
+.section-product.deactivated:after {
+  color: #f56c6c;
+  content: "این آگهی منقضی شده است.";
+  display: block;
+  z-index: 990;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 60px;
 }
 
 @media (max-width: 992px) {
