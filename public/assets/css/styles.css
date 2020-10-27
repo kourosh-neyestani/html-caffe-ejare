@@ -6615,6 +6615,37 @@ testimonial
   padding-top: 60px;
 }
 
+.section-product .el-make-favorite {
+  top: 3px;
+  left: 3px;
+  z-index: 15;
+  width: 45px;
+  height: 45px;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+}
+
+.section-product .el-make-favorite .button {
+  width: 100%;
+  height: 100%;
+  display: block;
+  line-height: 45px;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.section-product .el-make-favorite .button i {
+  font-size: 18px;
+}
+
+.section-product .el-make-favorite .button.active {
+  color: orange;
+}
+
+.section-product .el-make-favorite .button:not(.active):hover {
+  background-color: orange;
+}
+
 @media (max-width: 992px) {
   .section-product.section-product-1 .product-details .details h1 {
     font-size: 18px;
