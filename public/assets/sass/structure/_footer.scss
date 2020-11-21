@@ -44,6 +44,19 @@
                     }
                 }
             }
+            &.widget-enamad {
+                a {
+                    width: 75px;
+                    height: 75px;
+                    display: block;
+                    cursor: pointer;
+                    text-align: center;
+                }
+                img {
+                    width: 75px;
+                    margin: auto;
+                }
+            }
         }
     }
     .section-shape {
