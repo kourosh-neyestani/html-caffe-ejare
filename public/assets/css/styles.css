@@ -6823,16 +6823,25 @@ testimonial
 /*------------------------------------
     Section: Features
 ------------------------------------*/
-.section-features.section-features-1 .item {
-  height: 100%;
-}
-
 .section-features.section-features-1 .item .image {
-  height: 100%;
   overflow: hidden;
   position: relative;
   border-radius: 6px;
   background-color: var(--gray);
+}
+
+.section-features.section-features-1 .item .image img {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.section-features.section-features-1 .item.item-1 .image, .section-features.section-features-1 .item.item-4 .image {
+  padding-top: 35.4%;
+}
+
+.section-features.section-features-1 .item.item-2 .image, .section-features.section-features-1 .item.item-3 .image {
+  padding-top: 50%;
 }
 
 /*------------------------------------

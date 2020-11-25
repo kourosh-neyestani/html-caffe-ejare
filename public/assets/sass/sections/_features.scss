@@ -5,13 +5,28 @@
 .section-features {
     &.section-features-1 {
         .item {
-            height: 100%;
             .image {
-                height: 100%;
                 overflow: hidden;
                 position: relative;
                 border-radius: $default-br;
                 background-color: $gray;
+                img {
+                    top: 0;
+                    left: 0;
+                    position: absolute;
+                }
+            }
+            &.item-1,
+            &.item-4 {
+                .image {
+                    padding-top: 35.4%;
+                }
+            }
+            &.item-2,
+            &.item-3 {
+                .image {
+                    padding-top: 50%;
+                }
             }
         }
     }
