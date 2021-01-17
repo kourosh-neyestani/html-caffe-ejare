@@ -6612,7 +6612,7 @@ testimonial
   height: 100%;
   content: "";
   z-index: 989;
-  opacity: .9;
+  opacity: 0.9;
   position: absolute;
   background-color: var(--base-0);
 }
@@ -6657,6 +6657,16 @@ testimonial
 
 .section-product .el-make-favorite .button:not(.active):hover {
   background-color: orange;
+}
+
+.section-product .el-average-user-ratings {
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.section-product .el-average-user-ratings p {
+  color: #fff;
 }
 
 @media (max-width: 992px) {

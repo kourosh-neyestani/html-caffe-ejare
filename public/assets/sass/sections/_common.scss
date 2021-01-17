@@ -281,11 +281,11 @@
             height: 100%;
             content: "";
             z-index: 989;
-            opacity: .9;
+            opacity: 0.9;
             position: absolute;
             background-color: $base-0;
         }
-        &:after { 
+        &:after {
             @extend .display-center;
             color: $danger;
             content: "این آگهی منقضی شده است.";
@@ -311,7 +311,7 @@
             height: 100%;
             display: block;
             line-height: 45px;
-            background-color: rgba(0,0,0,.45);
+            background-color: rgba(0, 0, 0, 0.45);
             i {
                 font-size: 18px;
             }
@@ -321,6 +321,14 @@
             &:not(.active):hover {
                 background-color: $warning;
             }
+        }
+    }
+    .el-average-user-ratings {
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        p {
+            color: #fff;
         }
     }
 }
@@ -398,7 +406,6 @@
 }
 
 @media (max-width: 992px) {
-
 }
 
 /*------------------------------------
@@ -477,8 +484,7 @@
 }
 
 .section-dashboard-management {
-    
-    .dashboard-tabs-buttons{
+    .dashboard-tabs-buttons {
         top: 6px;
         left: 15px;
         position: absolute;
