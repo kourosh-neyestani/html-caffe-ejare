@@ -2409,40 +2409,41 @@ h6,
 }
 
 .app-sidenav .sidenav-menu .sidenav-head {
-  height: 150px;
+  height: 141px;
   overflow: hidden;
   position: relative;
   background-color: #ffd3a7;
 }
 
 .app-sidenav .sidenav-menu .sidenav-head img {
-  top: 30px;
+  top: 0;
   left: 0;
   width: 100%;
   position: absolute;
 }
 
 .app-sidenav .sidenav-menu .sidenav-head .button-close-sidenav {
-  top: 27px;
-  right: 27px;
-  width: 30px;
-  height: 30px;
+  top: 10px;
+  right: 10px;
+  width: 36px;
+  height: 36px;
   z-index: 999;
   display: block;
   cursor: pointer;
   position: absolute;
   border-radius: 50%;
   border: 0 !important;
+  background-color: rgba(255, 255, 255, 0.45);
 }
 
 .app-sidenav .sidenav-menu .sidenav-head .button-close-sidenav:before, .app-sidenav .sidenav-menu .sidenav-head .button-close-sidenav:after {
   top: 50%;
   left: 50%;
-  width: 100%;
+  width: 24px;
   height: 3px;
   content: "";
   position: absolute;
-  background-color: var(--primary);
+  background-color: red;
 }
 
 .app-sidenav .sidenav-menu .sidenav-head .button-close-sidenav:before {
