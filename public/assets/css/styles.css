@@ -6303,6 +6303,31 @@ Element: Modal
   line-height: 1.6;
 }
 
+.section-blog-single-post.section-blog-single-post-1 .single-post .details h2 {
+  font-size: 21px;
+  line-height: 1.6;
+}
+
+.section-blog-single-post.section-blog-single-post-1 .single-post .details h3 {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.section-blog-single-post.section-blog-single-post-1 .single-post .details h4 {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.section-blog-single-post.section-blog-single-post-1 .single-post .details h5 {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.section-blog-single-post.section-blog-single-post-1 .single-post .details h6 {
+  font-size: 12px;
+  line-height: 1.6;
+}
+
 @media (max-width: 768px) {
   .section-blog-single-post.section-blog-single-post-1 .single-post .details h1 {
     font-size: 21px;
