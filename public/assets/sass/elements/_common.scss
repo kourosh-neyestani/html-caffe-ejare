@@ -27,6 +27,7 @@
     box-shadow: $default-bs;
     border-radius: $default-br;
     .image {
+        overflow: hidden;
         position: relative;
         padding-top: 100%;
         margin-bottom: 15px;

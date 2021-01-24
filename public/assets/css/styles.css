@@ -4062,6 +4062,7 @@ form .input-select .select2-container--default .select2-selection--single .selec
 }
 
 .el-card-product .image {
+  overflow: hidden;
   position: relative;
   padding-top: 100%;
   margin-bottom: 15px;
